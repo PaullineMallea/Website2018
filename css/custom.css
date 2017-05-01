@@ -14,7 +14,7 @@ a:hover	{
 .nav{
     list-style:       none;
     display:          inline-block;
-    margin-left:      135px;
+    margin-left:      70px;
 }
 
 
@@ -29,7 +29,7 @@ a:hover	{
     color:            black;
     text-align:       center;
     text-decoration:  none;
-    font-size:        8pt;
+    font-size:        10pt;
     font-family:      sans-serif;
 /*    background:     white;
 */  font-style:       bold;
@@ -99,10 +99,22 @@ h3:hover {
 /* link color*/
 
 a {
-    color: black;
+    color:  #404040;
 }
 
-/* About me page conatiners*/
+/* About me page */
+
+h4 {
+  text-indent:    0px;
+  font-size:      30px;
+  font-family:   'Playfair Display', serif;
+  margin-top:     20px; 
+  margin-bottom:  30px;
+  color:          #404040;
+  text-align:     left;
+  letter-spacing: 1px;
+
+}
 
 .container4 {
 
@@ -119,9 +131,11 @@ a {
 h2 {
 	text-indent: 		50px;
 	font-size: 			20px;
-	color:				  white;
+	color:				  #404040;
 	font-family:   'Roboto', sans-serif;
   letter-spacing: 1px;
+  margin-top:     20px; 
+  margin-bottom:  30px;
 
 
 }
@@ -133,21 +147,25 @@ p {
 	font-size: 			  18px;
 	letter-spacing: 	1px;
  	font-family:      'Roboto', sans-serif;
- 	color:				   grey;
+ 	color:				    #666666;
 
 }
 
 
+
+
 /*circles in About Me page*/
 
+/*1st version*/
+
 #circle {
-	width: 					300px;
-	height: 				300px;
+	width: 					      300px;
+	height: 				      300px;
 	-moz-border-radius: 	150px;
-	-webkit-border-radius: 	150px;
-	border-radius: 			150px;
-	border: 				6px solid white;
-	text-align: 			center;
+	-webkit-border-radius:150px;
+	border-radius: 			  150px;
+	border: 				      6px solid white;
+	text-align: 			    center;
 
 
 }
@@ -155,24 +173,23 @@ p {
 #circle span { 
    height: 					280px; 
    display: 				inline-block; 
-   zoom: 					1; 
+   zoom: 					  1; 
    *display: 				inline; 
-   vertical-align: 			middle;
+   vertical-align: 	middle;
 
  }
 
 #circle h1{ 
    display: 				inline-block; 
-   zoom: 					1.5; 
+   zoom: 					  1.5; 
    *display: 				inline; 
-   vertical-align: 			middle;
-   color: 					grey;
+   vertical-align: 	middle;
+   color: 					#535353;
    font-size:				20px;
-   font-family: 'Roboto', sans-serif;
+   font-family:     'Roboto', sans-serif;
 
  }
 
- /*circles in About Me page*/
 
 #circle2 {
 	width: 					100px;
@@ -196,51 +213,63 @@ p {
 
 #circle2 h1{ 
    display: 				inline-block; 
-   zoom: 					0; 
+   zoom: 					  0; 
    *display: 				inline; 
-   vertical-align: 			middle;
-   color: 					grey;
+   vertical-align: 	middle;
+   color: 					#535353;
    font-size:				20px;
-   font-family: 'Roboto', sans-serif;
+   font-family:     'Roboto', sans-serif;
 
  }
 
 
  li {
- 	font-size: 			 	20px;
- 	color:					grey;
- 	font-family: 'Roboto', sans-serif;
- 	letter-spacing: 		1px;
+ 	font-size: 			 	 18px;
+ 	color:					   #666666;
+ 	font-family:       'Roboto', sans-serif;
+ 	letter-spacing: 	 1px;
+  list-style-type:   circle;
 
 
  }
 
+
 .col-sm-12 h1 {
-   color: 					black;
+   color: 					#404040;
    font-size:				22px;
-   padding-left: 			50px;
+   padding-left: 		50px;
+   margin-bottom:   -10px;
+   font-family:     'Roboto', sans-serif;
+
+
 
  }
 
  hr {
- 	margin-top: 50px;
- 	margin-bottom: 50px;
+ 	margin-top:       50px;
+ 	margin-bottom:    50px;
 
  }
 
+ /* Progress bar*/
 
+
+.progress.active .progress-bar {
+   -webkit-transition:    none !important;
+   transition:            none !important;
+ }
 
 /*  Work Page Container */
 
 .container5 {
 
 	/*blue color*/
-	background: 		#DDD8D2;
-	border-style: 		solid;
+	background: 		    #DDD8D2;
+	border-style: 		  solid;
     border-color: 		white;
     border-width: 		30px;
-    padding: 			30px;
-    width:				auto;
+    padding: 			    30px;
+    width:				    auto;
 
 }
 
@@ -248,7 +277,7 @@ p {
 
 .container6 {
 
-	/*blue color*/
+	/*red color*/
 	background: 		#FF5468;
 	border-style: 		solid;
     border-color: 		white;
@@ -279,18 +308,18 @@ p {
 }
 
 .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+    margin-left:    15px;
+    color:          white;
+    font-weight:    bold;
+    float:          right;
+    font-size:      22px;
+    line-height:    20px;
+    cursor:         pointer;
+    transition:     0.3s;
 }
 
 .closebtn:hover {
-    color: black;
+    color:          #404040;
 }
 
 
