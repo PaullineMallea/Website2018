@@ -12,15 +12,36 @@
 	<title> Paulline Mallea</title>
 
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/custom.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto" rel="stylesheet">
-  
+ <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-  <base target="_blank">
+
+  <script src="js/jquery.2.2.4.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+<!--   <script src="js/custom.js"></script>
+ -->
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto" rel="stylesheet">
+  <script src="js/progressbar.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+<!-- query -->
+
+<!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
 
 </head>
 <body>
@@ -32,77 +53,71 @@
 <!-- Navigation Bar -->
 <div class="row">
 
-  <div class="col-sm-7">
-    </div>
-    <div class="col-md-5"> 
+  <div class="col-xs-0 col-sm-0 col-md-5 col-lg-7">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5"> 
     <nav>
       <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="AboutMe.html">About</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="references.html">References</a></li>
+        <li><a href="references.html">Ref.</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
-    </div>
   </div>
+</div>
 
 <!-- End Navigation Bar -->
-  <div class="row">
-    <div class="col-sm-12">
-      <h3 style="margin-bottom: 0px;">WORK</h3>
+
+  <div class="row" id="padding">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h3>WORK</h3>
     </div>
   </div>
 
  <hr>
 
-    <div class="row" style="margin: 40px;">
-      <div class="col-sm-2">
-      <div id="circle2">
-      <a href="images/Resume.pdf"><span></span><h1>Resume</h1></a>
-      </div>
-      </div>
+<div class="row" id="paddingB">
 
-      <div class="col-sm-2">
-      <div id="circle2">
-      <a href="https://www.linkedin.com/in/paulline-mallea-30898038/"><span></span><h1>LinkedIn</h1></a>
-      </div>
-      </div>
+    <a href="images/Paulline_Abril_Mallea.pdf"><span></span><h2>Resume</h2></a>
 
-      <div class="col-sm-2">
-       <div id="circle2">
-      <a href="https://github.com/PollyPock3t"><span></span><h1>GitHub</h1>
-      </div></a>
-
-
+    <a href="https://www.linkedin.com/in/paulline-mallea-30898038/"><span></span><h2>LinkedIn</h2></a>
  
-      <div class="col-sm-2">
-      </div>
-    </div>
-    </div>
+    <a href="https://github.com/PollyPock3t"><span></span><h2>GitHub</h2></a>
+
+</div>
 
   <hr>
 
 
 
-  <div class="row">
-  <div class="col-sm-12">
-      <h2> Recent Projects </h2>
+  <div class="row" id="padding">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2> RECENT PROJECTS </h2>
 
-      <h1>Families For Freedom</h1>
+      <h4 id="client">Families For Freedom</h4>
+      <h6>Graphic Design | Web Design | Web Developement</h6>      
 
-      <p style="margin-bottom: 40px;">Families for Freedom is a New York-based multi-ethnic human rights organization by and for families facing and fighting deportation. An organization that focuses on immigration rights and puts out yearly reports. This is the second year that I have had the privalage of working with them. This year I helped create a website and printed material for their latest report: "THE WRIT OF HABEAS CORPUS: How a United States District Court Circumvents Oversight of Unlawful Detention."</p>
+
+      <p>Families for Freedom is a New York-based multi-ethnic human rights organization by and for families facing and fighting deportation. An organization that focuses on immigration rights and puts out yearly reports. This is the second year that I have had the privalage of working with them. This year I helped create a website and printed material for their latest report: "THE WRIT OF HABEAS CORPUS: How a United States District Court Circumvents Oversight of Unlawful Detention."</p>
+
+  <div class="btn"> 
+      <button><a href="http://familiesforhabeas.org/documents/Families_For_Habeas.pdf" target="_blank">PDF of Report</a></button>
+      <button><a href="http://familiesforhabeas.org/index.html" target="_blank">Go to Site</a></button>
+      <button><a href="https://github.com/PollyPock3t/FamiliesforFreedom" target="_blank">Github</a></button>
+
+  </div>
 
      <!--  <h1>Site</h1>  <h1>Git Hub</h1> <h1>Printed Report</h1> <h1> -->
 
 
 
 
-
-       <iframe id="THE WRIT OF HABEAS CORPUS"
+       <iframe style="margin-top: 100px; position: relative; width: 100%;"  id="THE WRIT OF HABEAS CORPUS"
         title="THE WRIT OF HABEAS CORPUS"
-        width="1300"
+        width="100%"
         height="600"
         frameborder="0"
         scrolling="yes"
@@ -115,15 +130,48 @@
   </div>
   </div>
 
-  <hr>
 
-  <div class="row">
-  <div class="col-sm-12">
-      <h2> Past Projects </h2>
+  <div class="row" id="padding" style="margin-top: 50px;">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h4 id="client">Be Well Group</h4>
+      <h6>Logo Design</h6> 
 
-      <iframe id="Paulline Old site"
+      <div class="col-sm-6 col-md-6 col-lg-6">
+      
+      <p style="margin-left: -15px;">Be Well group is a wellness health center based in Pennsylvania. I was contacted to help them develop a logo that represented their branding needs. They are in the process of rebranding their company.</p>  
+
+    <!--   <div> 
+        <button style="margin-left: -20px;"><a href="images/phase1.pdf" target="_blank">Process: Phase 1</a></button>
+        <p> Exploring elements the client desired for logo: Hexagon Shape, Highlight letters B &amp; L</p>
+        <button style="margin-left: -20px;"><a href="images/phase2.pdf" target="_blank">Process: Phase 2</a></button>
+        <p> Refining logo based on client feedback</p>
+      </div> -->
+
+    </div>
+
+
+    <div class="col-sm-6 col-md-6 col-lg-6">
+    <!--     <button style="margin-left: -20px;"><a href="images/phase3.pdf" target="_blank">Process: Final Design</a></button> -->
+        <span id="resize" ><img src= "images/bewell_logo.png"></span>
+    </div>
+</div>
+
+</div>
+
+
+  <hr class="topMargin">
+
+  <div class="row" id="padding">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2> PAST PROJECTS </h2>
+
+  <div class="btn"> 
+      <button><a href="https://www.paullinemallea.com/" target="_blank">Go to Past Projects</a></button>
+  </div>
+
+      <iframe style="margin-top: 100px; position: relative; width: 100%;" id="Paulline Old site"
         title="Paulline Mallea Old site"
-        width="1300"
+        width="100%"
         height="600"
         frameborder="0"
         scrolling="yes"
@@ -136,33 +184,22 @@
 
 </div>
 </div>
+
+
+<!-- End of educcation and blue background -->
+
+<div class="row" id="footer">
+ <div class="col-sm-12 col-md-12 col-lg-12" > 
+
+  <img src="images/Fav.png" style="height: 60px; width: 60px;" class="center">
+
+  <p>PAULLINE ABRIL MALLEA <br> 
+  <a href="mailto:Malleapaulline@gmail.com">Malleapaulline@gmail.com</a> </p>
+  </div>
 </div>
-
-<div class="row" style="padding: 40px; background-color: grey;">
-  <div class="col-sm-4">
-  
-  </div>
-
-  <div class="col-sm-4">
-  <h4>PAULLINE ABRIL MALLEA</h4>
-  <p style="text-align: center; margin-left:-30px;" ><a href="mailto:Malleapaulline@gmail.com">Malleapaulline@gmail.com</a><p>
-  </div>
-
-  <div class="col-sm-4">
-  
-  </div>
-
 
 
 </body>
-
-
-
-  
-
-     
-
-
 
 
 	

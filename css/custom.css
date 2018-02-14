@@ -1,5 +1,5 @@
 body{
-	background 	: white;
+	background 	: #F0EFF4;
 }
 
 a {
@@ -8,32 +8,62 @@ a {
 }
 
 a:hover	{
-	color: white;
+	color:                #F0EFF4;
+  text-decoration:      none;
+}
+
+h5:hover {
+  color:                #F0EFF4;
+  text-decoration:      none;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button.accordion  {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 .nav{
     list-style:       none;
     display:          inline-block;
-    margin-left:      70px;
-}
+    right:            50px;
+    position:         absolute;
+    margin:           0px;
+    z-index:          99999;
+    padding:          0px;
 
+}
 
 .nav li{
   display:            inline-block;
-  color:              white;
+  color:              #F0EFF4;
   text-decoration:    none;
 }
 
 .nav a{
     display:          inline-block;
-    color:            black;
+    color:            #404040;
     text-align:       center;
     text-decoration:  none;
     font-size:        10pt;
     font-family:      sans-serif;
-/*    background:     white;
-*/  font-style:       bold;
-    font-weight:      600;
     border:           2px solid white;
     border-spacing:   0px;
     margin-right:     -7px;
@@ -42,60 +72,94 @@ a:hover	{
 
 }
 
+/* Header Sectopm*/
+
+.container {
+
+  /*blue color*/
+  height:           450px;
+  position:         relative;
+
+}
+
 
 /* background colors for homepage*/
+
+
 .container1 {
 
-	/*blue color*/
-	background: 		#BED4F1;
-	border-style: 		solid;
-  border-color: 		white;
-  border-width: 		30px;
-	height:				    230px;
-
+  background:       rgba(218, 65, 103, .7);
+	height:				    auto;
+  padding-left:     2%;
+  position:         relative;
 }
 
 .container2 {
 
-	/*stone color*/
-	background: 		#DDD8D2;
-	border-style: 		solid;
-    border-color: 		white;
-    border-width: 		30px;
-	height:				230px;
-	margin-top: 		-30px;
-	box-shadow: -5px -3px 5px #b2aeae;
+  background:         rgba(131, 33, 97, .7);
+	height:				      auto;
+	margin-top: 		    -20px;
+  padding-left:        2%;
+  position:            relative;
 
+
+
+
+}
+
+
+.container3 .col-sm-12 {
+
+  /*Purple color*/
+  max-width:          100%;
 
 }
 
 .container3 {
 
-	/*Coral color*/
-	background: 		#FF5468;
-	border-style: 		solid;
-    border-color: 		white;
-    border-width: 		30px;
-	height:				500px;
-	margin-top: 		-30px;
-	box-shadow: -5px -3px 5px #b2aeae;
+	/*Purple color*/
+  max-width:          100%;
+	/*background: 		    #3D2645;*/
+  background:         rgba(61, 38, 69, .7);
+/*  border-style: 		  solid;
+    border-color: 		#F0EFF4;
+    border-width: 		10px;*/
+	height:				      auto;
+	margin-top: 		   -20px;
+/*	box-shadow:        -5px -3px 5px #b2aeae;
+*/  padding-left:       2%;
+  position:           relative;
+
 
 }
+
+
+
 
 /*h3 for homepage*/
 
 h3 {
-	text-indent: 		50px;
-	font-size: 			80px;
-	font-family:   'Playfair Display', serif;
-	margin-top:			20px; 
-  color:          #404040;
+	text-indent: 		0px;
+	font-size: 			150px;
+  font-family:    'Oswald', sans-serif;
+	margin-top:			50px; 
+  color:          #F7F052;
+  padding-top:    50px;
+  text-align:     center;
 
 }
 
-h3:hover {
-  color: white;
+
+h5 {
+  text-indent:    0px;
+  font-size:      20px;
+  font-family:   'Roboto', sans-serif;
+  margin-top:     20px; 
+  color:          #F0EFF4;
+
 }
+
+
 /* link color*/
 
 a {
@@ -106,57 +170,98 @@ a {
 
 h4 {
   text-indent:    0px;
-  font-size:      30px;
-  font-family:   'Playfair Display', serif;
+  font-size:      20px;
+  font-family:   'Roboto', sans-serif;
   margin-top:     20px; 
-  margin-bottom:  30px;
-  color:          #404040;
+  margin-bottom:  0px;
+  color:          #F0EFF4;
   text-align:     left;
   letter-spacing: 1px;
 
 }
 
+
 .container4 {
 
 	/*blue color*/
-	background: 		#BED4F1;
-	border-style: 		solid;
-    border-color: 		white;
+	background: 		    #BED4F1;
+	border-style: 		  solid;
+    border-color: 		#F0EFF4;
     border-width: 		30px;
-    padding: 			30px;
-    width:				auto;
+    padding: 			    30px;
+    width:				    auto;
 
 }
 
+
 h2 {
-	text-indent: 		50px;
-	font-size: 			20px;
+	text-indent: 		0px;
+	font-size: 			40px;
 	color:				  #404040;
 	font-family:   'Roboto', sans-serif;
   letter-spacing: 1px;
   margin-top:     20px; 
-  margin-bottom:  30px;
-
 
 }
 
+.col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 h2 {
+  text-indent:    10px;
+  font-size:      20px;
+  color:        #404040;
+  font-family:      'Roboto', sans-serif;
+    letter-spacing:   1px;
+    margin-top:       10px; 
+    margin-bottom:    20px;
+
+}
+
+h6 {
+  text-indent:    0px;
+  font-size:      20px;
+  color:          #404040;
+  font-family:   'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top:     10px; 
+  margin-bottom:  20px;
+
+}
+
+
 p {
   margin-top:       20px;
-	padding-left:  		50px;
+	padding-left:  		0px;
 	padding-right: 		50px;	
 	font-size: 			  18px;
 	letter-spacing: 	1px;
  	font-family:      'Roboto', sans-serif;
- 	color:				    #666666;
+ 	color:				    #F0EFF4;
 
 }
 
 
+#bar p {
+  margin-top:       20px;
+  padding-left:     0px;
+  padding-right:    50px; 
+  font-size:        18px;
+  letter-spacing:   1px;
+  font-family:      'Roboto', sans-serif;
+  color:            #666666;
+
+}
 
 
 /*circles in About Me page*/
 
 /*1st version*/
+
+#bar {
+  padding-left:         0px;
+}
+
+#bar h6 {
+  font-size:            30px;
+}
 
 #circle {
 	width: 					      300px;
@@ -173,13 +278,15 @@ p {
 #circle span { 
    height: 					280px; 
    display: 				inline-block; 
-   zoom: 					  1; 
-   *display: 				inline; 
+  /* zoom: 					  1; 
+   *display: 				inline; */
    vertical-align: 	middle;
 
  }
 
-#circle h1{ 
+
+
+#circle h1 { 
    display: 				inline-block; 
    zoom: 					  1.5; 
    *display: 				inline; 
@@ -192,36 +299,77 @@ p {
 
 
 #circle2 {
-	width: 					100px;
-	height: 				100px;
-	-moz-border-radius: 	50px;
-	-webkit-border-radius: 	50px;
-	border-radius: 			50px;
-	border: 				5px solid white;
-	text-align: 			center;
+	width: 					       150px;
+	height: 				       150px;
+	-moz-border-radius: 	  75px;
+	-webkit-border-radius: 	75px;
+	border-radius: 			    75px;
+	border: 				       5px solid white;
+	text-align: 			     center;
 
 }
 
+.col-xs-4 #circle2 {
+  width:                 100px;
+  height:                100px;
+  -moz-border-radius:     50px;
+  -webkit-border-radius:  50px;
+  border-radius:          50px;
+  border:                5px solid white;
+  text-align:            center;
+
+}
+
+
 #circle2 span { 
    height: 					80px; 
-   display: 				inline-block; 
-   zoom: 					1; 
-   *display: 				inline; 
-   vertical-align: 			middle;
+/*   display: 				inline-block; 
+*/   zoom: 					  1; 
+/*   *display: 				inline; 
+   vertical-align: 	middle;*/
+   margin-top:      50px;
+}
+
+.col-sm-4 #circle2 span { 
+   height:          80px; 
+   display:         inline-block; 
+   zoom:            1; 
+   *display:        inline; 
+   vertical-align:  middle;
+   margin-top:      0px;
 
  }
 
-#circle2 h1{ 
+#circle2 h1 { 
    display: 				inline-block; 
    zoom: 					  0; 
-   *display: 				inline; 
-   vertical-align: 	middle;
+/*   *display: 				inline;
+*/ vertical-align: 	middle;
    color: 					#535353;
    font-size:				20px;
    font-family:     'Roboto', sans-serif;
 
  }
 
+ .col-xs-4 #circle2 h1 { 
+   display:         inline-block; 
+   zoom:            0; 
+   */*display:        inline; */
+   vertical-align:  middle;
+   color:           #535353;
+   font-size:       16px;
+   font-family:     'Roboto', sans-serif;
+
+}
+
+#padding {
+  margin-left:      40px;
+  margin-right:     40px;
+}
+
+#paddingB h2 {
+  margin-left:      70px;
+}
 
  li {
  	font-size: 			 	 18px;
@@ -251,7 +399,7 @@ p {
 
  }
 
- /* Progress bar*/
+ /* Progress bar
 
 
 .progress.active .progress-bar {
@@ -266,36 +414,25 @@ p {
 	/*blue color*/
 	background: 		    #DDD8D2;
 	border-style: 		  solid;
-    border-color: 		white;
+    border-color: 		#F0EFF4;
     border-width: 		30px;
     padding: 			    30px;
     width:				    auto;
 
 }
 
-/*Refernces page*/
-
-.container6 {
-
-	/*red color*/
-	background: 		#FF5468;
-	border-style: 		solid;
-    border-color: 		white;
-    border-width: 		30px;
-    padding: 			30px;
-    width:				auto;
-
-}
 
  /*Image in a circle*/
 
  .img-circle {
  	display: block;
- 	width: 200px;
- 	height: 200px;
+ 	width: 350px;
+ 	height: 350px;
     border-radius: 50%;
     filter: grayscale(100%);  
     text-align:center;
+  margin-top: 80px;
+
 }
 
 
@@ -304,12 +441,12 @@ p {
 .alert {
     padding: 20px;
     background-color: #f44336;
-    color: white;
+    color: #F0EFF4;
 }
 
 .closebtn {
     margin-left:    15px;
-    color:          white;
+    color:          #F0EFF4;
     font-weight:    bold;
     float:          right;
     font-size:      22px;
@@ -320,9 +457,288 @@ p {
 
 .closebtn:hover {
     color:          #404040;
+
+}
+
+/*contact page*/
+
+.container6 {
+
+  /*purple color*/
+  background:         rgba(61, 38, 69, .7);;
+  border-style:       solid;
+    border-color:     #F0EFF4;
+    border-width:     30px;
+    padding:          30px;
+    width:            auto;
+
+}
+
+.container7 {
+  border-style:       solid;
+    border-color:     #F0EFF4;
+    border-width:     30px;
+    padding:          30px;
+    width:            auto;
+    height:           725px;
+
 }
 
 
+/*footer*/
+
+#footer {
+  text-indent:    0px;
+  font-size:      10px;
+  font-family:   'Roboto', sans-serif;
+  color:          #404040;
+  text-align:     left;
+  letter-spacing: 1px;
+  text-align:     center; 
+  padding-top:    30px;
 
 
+}
 
+#footer a:hover {
+  color:           #7D82A5;
+  text-decoration: none;
+}
+
+/*video*/
+
+#video-background {
+/*  making the video fullscreen  */
+  position:        fixed;
+  right:           0; 
+  bottom:          0;
+  min-width:       100%; 
+  min-height:      100%;
+  width:           auto; 
+  height:          auto;
+  z-index:         -100;
+  display:        inline-block;
+/*  filter: grayscale(100%);
+*/}
+
+#link a:hover {
+  color:           #7D82A5;
+  text-decoration: none;
+
+
+}
+
+#link {
+  margin-left:    50px;
+}
+
+.btn {
+  position:         absolute;
+  right:            5px;
+  text-decoration: none;
+}
+
+button {
+    display:          inline-block;
+    text-align:       center;
+    text-decoration:  none;
+    font-size:        10pt;
+    font-family:      sans-serif;
+    border:           2px solid white;
+    border-spacing:   0px;
+    font-family:      'Roboto', sans-serif;
+    letter-spacing:   2px;
+    padding:          10px;
+    margin:           5px;
+}
+
+.btn a:hover {
+  color:              #7D82A5;
+  text-decoration:    none;
+}
+
+/* visited link */
+.btn a:visited {
+    color:           #F0EFF4;
+    text-decoration: none;
+}
+
+/* selected link */
+.btn a:active {
+    color:            #F0EFF4;
+    text-decoration:  none;
+}
+
+.center {
+
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+}
+
+#client {
+  background-color: #404040;
+  color:            #F0EFF4;
+  padding:          10px;
+}
+
+
+/* typewriter affect*/
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap;  /*Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 6s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+/*Talk Bubble*/
+
+/*Right*/
+
+#talkbubble {
+   width: 70%;
+   height: auto;
+   background: white;
+   position: relative;
+   border-radius: 0px;
+   margin: 100px auto;
+   padding: 50px;
+
+}
+
+p #talkbuble {
+  color:black;
+}
+
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   bottom: 0px;
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-right: 20px solid white;
+   border-bottom: 0px solid transparent;
+ 
+
+}
+
+/*Left*/
+
+#talkbubble_Left {
+   width: 55%;
+   height: auto;
+   background: white;
+   position: relative;
+   border-radius: 0px;
+/*   margin: 100px auto;
+*/   padding: 50px;
+   margin-left: 10%;
+   margin-right: 2%;
+   
+}
+
+#talkbubble_Left:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   bottom: 0px;
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-left: 20px solid white;
+   border-bottom: 0px solid transparent;
+   
+}
+
+/*End of Talk Bubble*/
+
+#emoji_right {
+  right: 5%;
+  height: 50%;
+  width: auto;
+  display: block;
+  position: absolute;
+  padding: 0px;
+  top: 0%;
+}
+
+#emoji_left {
+  margin-top: -20%;
+  left: 0%;
+  height: 70%;
+  width: auto;
+  display: block;
+  position: absolute;
+  padding: 0px;
+  top: 0%;
+ }
+
+/*Shake*/
+
+
+.content {
+  margin: 5% 0 0 0%;
+}
+.shake {
+  display:inline-block
+}
+.shake {
+  display:block;
+  position:relative;
+}
+img{
+display: block;
+height: 250px;
+width: 250px;
+border-radius: 50% 50% 50% 50%;
+}
+h2.shake,
+.shake.inline {
+  display:inline-block
+}
+
+@-webkit-keyframes spaceboots {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+  -webkit-animation-name: spaceboots;
+  -webkit-animation-duration: 6s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+/* end of Shake*/

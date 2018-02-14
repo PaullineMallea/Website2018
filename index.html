@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <link rel="icon" 
       type="image/png" 
@@ -12,38 +13,59 @@
 
 	<title> Paulline Mallea</title>
 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/custom.css">
+
+  <script src="js/jquery.2.2.4.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+<!--   <script src="js/custom.js"></script>
+ -->
+
   <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto" rel="stylesheet">
   <script src="js/progressbar.js"></script>
 
+  <script src="js/main.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+<!-- query -->
+
+<!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
   
 
 
 </head>
 <body>
 
-<div class="alert">
+<!-- <img style="right:30px;" src="images/Fav.png">
+ --><!-- <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   <strong>Work in Progress!</strong> This site is not mobile ready yet. Please view on a desktop.
-</div>
+</div> -->
 
 <!-- Blue colored page -->
-<a href="AboutMe.html">
-<div class="container1" >
+<a href="AboutMe.html" >
+<div class="container1">
   <div class="row">
-    <div class="col-sm-12">
-      <h3>ABOUT</h3>
-      <h2>Paulline Abril Mallea</h2>
+    <div class="col-sm-12 col-md-12 col-lg-12" id="padding">
+      <h5>ABOUT</h5>
+      <h6>Paulline Abril Mallea</h6>
     
     </div>
    </div>
 </div></a>
-
 
 <!-- Stone colored page -->
 
@@ -51,9 +73,9 @@
 <a href="work.html">
 <div class="container2">
   <div class="row">
-    <div class="col-sm-12">
-      <h3>WORK</h3>
-      <h2>Projects</h2>
+    <div class="col-sm-12 col-md-12 col-lg-12" id="padding">
+      <h5>WORK</h5>
+      <h6>Projects</h6>
     
     </div>
    </div>
@@ -65,32 +87,34 @@
 <a href="references.html">
 <div class="container3">
   <div class="row">
-    <div class="col-sm-12">
-      <h3>REFERENCES</h3>
-      <h2>Word of Mouth</h2>
+    <div class="col-sm-12 col-md-12 col-lg-12" id="padding">
+      <h5>REF.</h5>
+      <h6>Word of Mouth</h6>
     </div>
    </div>
 </div></a>
 
-<div class="row" style="padding: 40px; background-color: grey;">
-  <div class="col-sm-4">
-  
-  </div>
 
-  <div class="col-sm-4">
-  <h4>PAULLINE ABRIL MALLEA</h4>
-  <p style="text-align: center; margin-left:-30px;" ><a href="mailto:Malleapaulline@gmail.com">Malleapaulline@gmail.com</a><p>
-  </div>
+<!-- End of educcation and blue background -->
 
-  <div class="col-sm-4">
-  
-  </div>
+<div class="row" id="footer">
+ <div class="col-sm-12 col-md-12 col-lg-12" > 
 
+  <img src="images/Fav.png" style="height: 60px; width: 60px;" class="center">
+
+  <p>PAULLINE ABRIL MALLEA <br> 
+  <a href="mailto:Malleapaulline@gmail.com">Malleapaulline@gmail.com</a> </p>
+  </div>
+</div>
 
 	
-	<script src="js/jquery.2.2.4.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/custom.js"></script>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
 
 </body>
 </html>
