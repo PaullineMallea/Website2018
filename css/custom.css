@@ -19,35 +19,35 @@ h5:hover {
 
 
 .panel {
-    padding: 0 18px;
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border:           none;
+  cursor:           pointer;
+  overflow:         hidden;
+  outline:          none;
+  max-height:       0;
+  overflow:         hidden;
+  transition:       max-height 0.2s ease-out;
 }
 
 button.accordion  {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border:           none;
+  cursor:           pointer;
+  overflow:         hidden;
+  outline:          none;
 }
 
 .nav{
-    list-style:       none;
-    display:          inline-block;
-    right:            50px;
-    position:         absolute;
-    margin:           0px;
-    z-index:          99999;
-    padding:          0px;
+  list-style:       none;
+  display:          inline-block;
+  right:            50px;
+  position:         absolute;
+  margin:           0px;
+  z-index:          99999;
+  padding:          0px;
 
 }
 
@@ -58,17 +58,17 @@ button.accordion  {
 }
 
 .nav a{
-    display:          inline-block;
-    color:            #404040;
-    text-align:       center;
-    text-decoration:  none;
-    font-size:        10pt;
-    font-family:      sans-serif;
-    border:           2px solid white;
-    border-spacing:   0px;
-    margin-right:     -7px;
-    font-family:      'Roboto', sans-serif;
-    letter-spacing:   2px;
+  display:          inline-block;
+  color:            #404040;
+  text-align:       center;
+  text-decoration:  none;
+  font-size:        10pt;
+  font-family:      sans-serif;
+  border:           2px solid white;
+  border-spacing:   0px;
+  margin-right:     -7px;
+  font-family:      'Roboto', sans-serif;
+  letter-spacing:   2px;
 
 }
 
@@ -103,8 +103,6 @@ button.accordion  {
   position:            relative;
 
 
-
-
 }
 
 
@@ -133,10 +131,33 @@ button.accordion  {
 
 }
 
+/*Headers */
+h1 {
+  text-indent:    0px;
+  font-size:      20px;
+  font-family:   'Roboto', sans-serif;
+  margin-bottom:  30px;
+  color:          #404040;  
+  background:     white;
+  letter-spacing: 1px;
+  text-align:     center;
+  vertical-align: middle;
+  line-height:    30px;
+  height:         30px;
 
 
 
-/*h3 for homepage*/
+}
+
+h2 {
+  text-indent:    0px;
+  font-size:      40px;
+  color:          white;
+  font-family:   'Roboto', sans-serif;
+  letter-spacing: 1px;
+  margin-top:     20px; 
+
+}
 
 h3 {
 	text-indent: 		0px;
@@ -149,6 +170,19 @@ h3 {
 
 }
 
+h4 {
+  text-indent:    0px;
+  font-size:      20px;
+  font-family:   'Roboto', sans-serif;
+  margin-top:     0px; 
+  margin-bottom:  30px;
+  color:          #F0EFF4;  
+  text-align:     left;
+  letter-spacing: 2px;
+
+}
+
+
 
 h5 {
   text-indent:    0px;
@@ -160,61 +194,6 @@ h5 {
 }
 
 
-/* link color*/
-
-a {
-    color:  #404040;
-}
-
-/* About me page */
-
-h4 {
-  text-indent:    0px;
-  font-size:      20px;
-  font-family:   'Roboto', sans-serif;
-  margin-top:     20px; 
-  margin-bottom:  0px;
-  color:          #F0EFF4;
-  text-align:     left;
-  letter-spacing: 1px;
-
-}
-
-
-.container4 {
-
-	/*blue color*/
-	background: 		    #BED4F1;
-	border-style: 		  solid;
-    border-color: 		#F0EFF4;
-    border-width: 		30px;
-    padding: 			    30px;
-    width:				    auto;
-
-}
-
-
-h2 {
-	text-indent: 		0px;
-	font-size: 			40px;
-	color:				  #404040;
-	font-family:   'Roboto', sans-serif;
-  letter-spacing: 1px;
-  margin-top:     20px; 
-
-}
-
-.col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 h2 {
-  text-indent:    10px;
-  font-size:      20px;
-  color:        #404040;
-  font-family:      'Roboto', sans-serif;
-    letter-spacing:   1px;
-    margin-top:       10px; 
-    margin-bottom:    20px;
-
-}
-
 h6 {
   text-indent:    0px;
   font-size:      20px;
@@ -225,6 +204,44 @@ h6 {
   margin-bottom:  20px;
 
 }
+
+
+
+/* link color*/
+
+a {
+    color:  #404040;
+}
+
+/* About me page */
+
+
+.container4 {
+
+	/*blue color*/
+	background: 		  #BED4F1;
+	border-style: 		solid;
+  border-color: 		#F0EFF4;
+  border-width: 		30px;
+  padding: 			    30px;
+   width:				    auto;
+
+}
+
+
+
+
+.col-xs-12 .col-sm-12 .col-md-12 .col-lg-12 h2 {
+  text-indent:      10px;
+  font-size:        20px;
+  color:            #404040;
+  font-family:      'Roboto', sans-serif;
+  letter-spacing:   1px;
+  margin-top:       10px; 
+  margin-bottom:    20px;
+
+}
+
 
 
 p {
@@ -246,22 +263,25 @@ p {
   font-size:        18px;
   letter-spacing:   1px;
   font-family:      'Roboto', sans-serif;
-  color:            #666666;
+  color:            white;
 
 }
-
-
-/*circles in About Me page*/
 
 /*1st version*/
 
 #bar {
-  padding-left:         0px;
+  padding:         50px;
+
+
 }
+
 
 #bar h6 {
   font-size:            30px;
+  color:                yellow;
 }
+
+
 
 #circle {
 	width: 					      300px;
@@ -276,24 +296,24 @@ p {
 }
 
 #circle span { 
-   height: 					280px; 
-   display: 				inline-block; 
+  height: 					280px; 
+  display: 				  inline-block; 
   /* zoom: 					  1; 
    *display: 				inline; */
-   vertical-align: 	middle;
+  vertical-align: 	middle;
 
  }
 
 
 
 #circle h1 { 
-   display: 				inline-block; 
-   zoom: 					  1.5; 
-   *display: 				inline; 
-   vertical-align: 	middle;
-   color: 					#535353;
-   font-size:				20px;
-   font-family:     'Roboto', sans-serif;
+  display: 				  inline-block; 
+  zoom: 					  1.5; 
+  display: 				  inline; 
+  vertical-align: 	middle;
+  color: 					  #535353;
+  font-size:				20px;
+  font-family:     'Roboto', sans-serif;
 
  }
 
@@ -322,43 +342,43 @@ p {
 
 
 #circle2 span { 
-   height: 					80px; 
-/*   display: 				inline-block; 
-*/   zoom: 					  1; 
+  height: 					80px; 
+/*   display: 				inline-block; */   
+  zoom: 					  1; 
 /*   *display: 				inline; 
    vertical-align: 	middle;*/
-   margin-top:      50px;
+  margin-top:      50px;
 }
 
 .col-sm-4 #circle2 span { 
-   height:          80px; 
-   display:         inline-block; 
-   zoom:            1; 
-   *display:        inline; 
-   vertical-align:  middle;
-   margin-top:      0px;
+  height:          80px; 
+  display:         inline-block; 
+  zoom:            1; 
+  display:        inline; 
+  vertical-align:  middle;
+  margin-top:      0px;
 
  }
 
 #circle2 h1 { 
-   display: 				inline-block; 
-   zoom: 					  0; 
-/*   *display: 				inline;
-*/ vertical-align: 	middle;
-   color: 					#535353;
-   font-size:				20px;
-   font-family:     'Roboto', sans-serif;
+  display: 				   inline-block; 
+  zoom: 					   0; 
+/*   *display: 			inline;*/ 
+  vertical-align: 	middle;
+  color: 					  #535353;
+  font-size:				20px;
+  font-family:     'Roboto', sans-serif;
 
  }
 
- .col-xs-4 #circle2 h1 { 
-   display:         inline-block; 
-   zoom:            0; 
-   */*display:        inline; */
-   vertical-align:  middle;
-   color:           #535353;
-   font-size:       16px;
-   font-family:     'Roboto', sans-serif;
+.col-xs-4 #circle2 h1 { 
+  display:         inline-block; 
+  zoom:            0; 
+  /*display:        inline; */
+  vertical-align:  middle;
+  color:           #535353;
+  font-size:       16px;
+  font-family:     'Roboto', sans-serif;
 
 }
 
@@ -382,22 +402,26 @@ p {
  }
 
 
-.col-sm-12 h1 {
+/*.col-sm-12 h1 {
    color: 					#404040;
    font-size:				22px;
    padding-left: 		50px;
    margin-bottom:   -10px;
    font-family:     'Roboto', sans-serif;
 
-
-
- }
+ }*/
 
  hr {
  	margin-top:       50px;
  	margin-bottom:    50px;
+  height:           12px;
+  border:           0;
+  box-shadow:       inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
 
  }
+
+
 
  /* Progress bar
 
@@ -414,10 +438,10 @@ p {
 	/*blue color*/
 	background: 		    #DDD8D2;
 	border-style: 		  solid;
-    border-color: 		#F0EFF4;
-    border-width: 		30px;
-    padding: 			    30px;
-    width:				    auto;
+  border-color: 		#F0EFF4;
+  border-width: 		30px;
+  padding: 			    30px;
+  width:				    auto;
 
 }
 
@@ -425,13 +449,13 @@ p {
  /*Image in a circle*/
 
  .img-circle {
- 	display: block;
- 	width: 350px;
- 	height: 350px;
-    border-radius: 50%;
-    filter: grayscale(100%);  
-    text-align:center;
-  margin-top: 80px;
+ 	display:          block;
+ 	width:            350px;
+ 	height:           350px;
+  border-radius:    50%;
+  filter:           grayscale(100%);  
+  text-align:       center;
+  margin-top:       80px;
 
 }
 
@@ -439,24 +463,24 @@ p {
 /* alert*/
 
 .alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: #F0EFF4;
+  padding:          20px;
+  background-color: #f44336;
+  color:            #F0EFF4;
 }
 
 .closebtn {
-    margin-left:    15px;
-    color:          #F0EFF4;
-    font-weight:    bold;
-    float:          right;
-    font-size:      22px;
-    line-height:    20px;
-    cursor:         pointer;
-    transition:     0.3s;
+  margin-left:    15px;
+  color:          #F0EFF4;
+  font-weight:    bold;
+  float:          right;
+  font-size:      22px;
+  line-height:    20px;
+  cursor:         pointer;
+  transition:     0.3s;
 }
 
 .closebtn:hover {
-    color:          #404040;
+    color:        #404040;
 
 }
 
@@ -467,20 +491,20 @@ p {
   /*purple color*/
   background:         rgba(61, 38, 69, .7);;
   border-style:       solid;
-    border-color:     #F0EFF4;
-    border-width:     30px;
-    padding:          30px;
-    width:            auto;
+  border-color:       #F0EFF4;
+  border-width:       30px;
+  padding:            30px;
+  width:              auto;
 
 }
 
 .container7 {
-  border-style:       solid;
-    border-color:     #F0EFF4;
-    border-width:     30px;
-    padding:          30px;
-    width:            auto;
-    height:           725px;
+  border-style:     solid;
+  border-color:     rgba(61, 38, 69, .7);;
+  border-width:     30px;
+  padding:          30px;
+  width:            auto;
+  height:           725px;
 
 }
 
@@ -529,27 +553,27 @@ p {
 }
 
 #link {
-  margin-left:    50px;
+  margin-left:      50px;
 }
 
 .btn {
   position:         absolute;
   right:            5px;
-  text-decoration: none;
+  text-decoration:  none;
 }
 
 button {
-    display:          inline-block;
-    text-align:       center;
-    text-decoration:  none;
-    font-size:        10pt;
-    font-family:      sans-serif;
-    border:           2px solid white;
-    border-spacing:   0px;
-    font-family:      'Roboto', sans-serif;
-    letter-spacing:   2px;
-    padding:          10px;
-    margin:           5px;
+  display:          inline-block;
+  text-align:       center;
+  text-decoration:  none;
+  font-size:        10pt;
+  font-family:      sans-serif;
+  border:           2px solid white;
+  border-spacing:   0px;
+  font-family:      'Roboto', sans-serif;
+  letter-spacing:   2px;
+  padding:          10px;
+  margin:           5px;
 }
 
 .btn a:hover {
@@ -559,24 +583,23 @@ button {
 
 /* visited link */
 .btn a:visited {
-    color:           #F0EFF4;
-    text-decoration: none;
+  color:           #F0EFF4;
+  text-decoration: none;
 }
 
 /* selected link */
 .btn a:active {
-    color:            #F0EFF4;
-    text-decoration:  none;
+  color:            #F0EFF4;
+  text-decoration:  none;
 }
 
 .center {
+  display:          block;
+  margin-left:      auto;
+  margin-right:     auto;
+  width:            50%;
+}
 
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-}
 
 #client {
   background-color: #404040;
@@ -588,10 +611,10 @@ button {
 /* typewriter affect*/
 
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap;  /*Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow:       hidden; /* Ensures the content is not revealed until the animation */
+  border-right:   .15em solid orange; /* The typwriter cursor */
+  white-space:     nowrap;  /*Keeps the content on a single line */
+  margin:          0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .10em; /* Adjust as needed */
   animation: 
     typing 6s steps(40, end),
@@ -616,30 +639,30 @@ button {
 /*Right*/
 
 #talkbubble {
-   width: 70%;
-   height: auto;
-   background: white;
-   position: relative;
-   border-radius: 0px;
-   margin: 100px auto;
-   padding: 50px;
+   width:           70%;
+   height:          auto;
+   background:      white;
+   position:        relative;
+   border-radius:   0px;
+   margin:          100px auto;
+   padding:         50px;
 
 }
 
 p #talkbuble {
-  color:black;
+  color:            black;
 }
 
 #talkbubble:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   bottom: 0px;
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
-   border-right: 20px solid white;
-   border-bottom: 0px solid transparent;
+   content:         "";
+   position:        absolute;
+   right:           100%;
+   bottom:          0px;
+   width:           0;
+   height:          0;
+   border-top:      20px solid transparent;
+   border-right:    20px solid white;
+   border-bottom:   0px solid transparent;
  
 
 }
@@ -647,76 +670,78 @@ p #talkbuble {
 /*Left*/
 
 #talkbubble_Left {
-   width: 55%;
-   height: auto;
-   background: white;
-   position: relative;
-   border-radius: 0px;
+   width:           55%;
+   height:          auto;
+   background:      white;
+   position:        relative;
+   border-radius:   0px;
 /*   margin: 100px auto;
-*/   padding: 50px;
-   margin-left: 10%;
-   margin-right: 2%;
+*/   padding:       50px;
+   margin-left:     10%;
+   margin-right:    2%;
    
 }
 
 #talkbubble_Left:before {
-   content:"";
-   position: absolute;
-   left: 100%;
-   bottom: 0px;
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
-   border-left: 20px solid white;
-   border-bottom: 0px solid transparent;
+   content:         "";
+   position:        absolute;
+   left:            100%;
+   bottom:          0px;
+   width:           0;
+   height:          0;
+   border-top:      20px solid transparent;
+   border-left:     20px solid white;
+   border-bottom:   0px solid transparent;
    
 }
 
 /*End of Talk Bubble*/
 
 #emoji_right {
-  right: 5%;
-  height: 50%;
-  width: auto;
-  display: block;
-  position: absolute;
-  padding: 0px;
-  top: 0%;
+  right:            5%;
+  height:           50%;
+  width:            auto;
+  display:          block;
+  position:         absolute;
+  padding:          0px;
+  top:              0%;
 }
 
 #emoji_left {
-  margin-top: -20%;
-  left: 0%;
-  height: 70%;
-  width: auto;
-  display: block;
-  position: absolute;
-  padding: 0px;
-  top: 0%;
+  margin-top:       -20%;
+  left:             0%;
+  height:           70%;
+  width:            auto;
+  display:          block;
+  position:         absolute;
+  padding:          0px;
+  top:              0%;
  }
 
 /*Shake*/
 
 
 .content {
-  margin: 5% 0 0 0%;
+  margin:           5% 0 0 0%;
 }
 .shake {
-  display:inline-block
+  display:          inline-block
 }
 .shake {
-  display:block;
-  position:relative;
+  display:          block;
+  position:         relative;
 }
-img{
-display: block;
-height: 250px;
-width: 250px;
-border-radius: 50% 50% 50% 50%;
+
+img #circle {
+display:            block;
+height:             250px;
+width:              250px;
+border-radius:      50% 50% 50% 50%;
 }
+
 h2.shake,
 .shake.inline {
-  display:inline-block
+  display:          inline-block
 }
 
 @-webkit-keyframes spaceboots {
@@ -734,11 +759,435 @@ h2.shake,
 }
 .shake:hover,
 .shake:focus {
-  -webkit-animation-name: spaceboots;
-  -webkit-animation-duration: 6s;
-  -webkit-transform-origin:50% 50%;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation-name:             spaceboots;
+  -webkit-animation-duration:         6s;
+  -webkit-transform-origin:           50% 50%;
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function:  linear;
 }
 
 /* end of Shake*/
+
+
+/* VenDiagram*/
+
+#myChart {
+  height:     100%;
+  width:      100%;
+  min-height: 800px;
+}
+.zc-ref {
+  display:none;
+}
+
+/*timeline*/
+
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+section {
+  margin-top:     -300px;
+  margin-left:     0px;
+}
+
+.timeline {
+/*  overflow:hidden;
+*/}
+
+.timeline p{
+  color:          grey;
+  font-size:      15px;
+  margin-right:   -10px;
+}
+
+.timeline ol {
+  font-size:      0;
+  width:          100vw;
+  padding:        600px 0;
+  transition: all 1s;
+}
+
+.timeline ol li {
+  position:         relative;
+  display:          inline-block;
+  list-style-type:  none;
+  width:            150px;
+  height:           3px;
+  background:       #fff;
+}
+
+/* check this */
+
+.timeline ol li:last-child {
+  width:            200px;
+}
+
+.timeline ol li:not(:first-child) {
+  margin-left:      14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+  content:          '';
+  position:         absolute;
+  top:              50%;
+  left:             calc(100% + 1px);
+  bottom:           0;
+  width:            12px;
+  height:           12px;
+  transform:        translateY(-50%);
+  border-radius:    50%;
+  background:       #F45B69;
+}
+
+
+/* Div size*/
+.timeline ol li div {
+  position:         absolute;
+  left:             calc(100% + 7px);
+  width:            250px;
+  padding:          15px;
+  font-size:        1rem;
+  white-space:      normal;
+  color:            black;
+  background:       white;
+}
+
+
+.timeline ol li div::before {
+  content:          '';
+  position:         absolute;
+  top:              100%;
+  left:             0;
+  width:            0;
+  height:           0;
+  border-style:     solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+  top:              -16px;
+  transform:        translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+  top:               100%;
+  border-width:      8px 8px 0 0;
+  border-color:      white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+  top:              calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+  top:              -8px;
+  border-width:     8px 0 0 8px;
+  border-color:     transparent transparent transparent white;
+}
+
+.timeline time {
+  display:          block;
+  font-size:        1.2rem;
+  font-weight:      bold;
+  margin-bottom:    8px;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+  .timeline ol,
+  .timeline ol li {
+    width:          auto; 
+  }
+  
+  .timeline ol {
+    padding:        0;
+    transform:      none !important;
+  }
+  
+  .timeline ol li {
+    display:        block;
+    height:         auto;
+    background:     transparent;
+  }
+  
+  .timeline ol li:first-child {
+    margin-top:     25px;
+  }
+  
+  .timeline ol li:not(:first-child) {
+    margin-left:    auto;
+  }
+  
+  .timeline ol li div {
+    width:          94%;
+    height:         auto !important;
+    margin:         0 auto 25px;
+  }
+  
+  .timeline ol li div {
+    position:       static;
+  }
+  
+  .timeline ol li:nth-child(odd) div {
+    transform:      none;
+  }
+  
+  .timeline ol li:nth-child(odd) div::before,
+  .timeline ol li:nth-child(even) div::before {
+    left: 50%;
+    top: 100%;
+    transform:      translateX(-50%);
+    border:         none;
+    border-left:    1px solid white;
+    height:         25px;
+  }
+  
+  .timeline ol li:last-child,
+  .timeline ol li:nth-last-child(2) div::before,
+  .timeline ol li:not(:last-child)::after,
+  .timeline .arrows {
+    display:        none;
+  }
+}
+
+
+/*timeline*/
+
+
+/*columns*/
+.column {
+    float:          left;
+    width:          33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content:        "";
+    display:        table;
+    clear:          both;
+}
+
+
+
+/* FFF work page*/
+
+.LinkedIn {
+  position:         relative;
+  width:            100%;
+  padding-right:    5%;
+  padding-left:     60%;
+  padding-top:      3%;
+  padding-bottom:   3%;
+}
+
+
+}
+
+/*--------------------------------------------------------- name */
+
+#name { 
+  position:       relative;
+  display:        block;
+}
+/*--------------------------------------------------------- About section*/
+
+
+.about {
+  position:     relative;
+  width:        50%;
+  padding:      1%;
+  margin-top:   100px;
+  margin-left:  25%;
+  margin-right: 25%;
+/*    border: 4px solid black;
+*/
+}
+
+
+/*--------------------------------------------------------- Work section*/
+
+
+.work {
+  width:            90%;
+  height:           700px;
+  padding-bottom:   20px;
+  margin-top:       5%;
+  margin-left:      5%;
+  float:            left;
+  display:          inline-block;
+  position:         relative;
+/*  background-color: #cccccc;*/
+  background-color:  white;
+
+}
+
+.work p {
+  color:            grey;
+  letter-spacing:   0px;
+  text-align:       justify;
+ /* font-size:        20px;*/
+}
+
+
+
+#work {
+  width:        500px;
+  height:       106px;
+  margin-left:  5%;
+  margin-right: 10%;
+  margin-top:   3%;
+  z-index:      -20;
+  
+}
+
+.families_for_freedom_About {
+  width:        80%;
+  float:        left;
+  padding:      30px;
+
+}
+
+.github_linkedin_Links {
+  width:        20%;
+  height:       100%;
+  position:     absolute;
+  float:        right;
+  display:      inline-block;
+  margin:       auto; 
+  text-align:   center;
+
+}
+
+.github_linkedin_Links table {
+  width:        80%;
+  /*margin:       auto; */
+  margin-top:   20px;
+
+}
+
+
+th {
+  padding:      15px;
+}
+
+
+/*--------------------------------------------------------- Website Design & Web Developement copy*/
+
+.website-design-developemnt {
+  width:          203px;
+  height:         102px;
+  font-family:    Arial;
+  font-size:      30px;
+  letter-spacing: 1.6px;
+  text-align:     left;
+  color:          #000000;
+}
+
+
+/*--------------------------------------------------------- Web icon*/
+
+.web {
+  width:    44px;
+  height:   44px;
+}
+
+/*--------------------------------------------------------- Github icon*/
+
+ .git-hub {
+  width:    46px;
+  height:   45px;
+  z-index:  100;
+}
+/*--------------------------------------------------------- Screenshot of website*/
+
+.ffh_website {
+  width:      100%;
+  display:    inline-block;
+  position:   relative;
+  margin-top: 60px;
+
+}
+
+
+.habeas_site{
+  width:          82%;
+  height:         692px;
+  position:       relative;
+  margin-left:    17%;
+  margin-top:     -7%;
+  margin-bottom:  100px;
+  z-index:        101;
+}
+
+#mac {
+  width:          60%;
+  display:        inline-block;
+  z-index:        1000;
+  margin-top:     -55%;
+  margin-left:    40%;
+}
+
+.title {
+  color:          #404040;
+}
+
+
+/* Modal*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0,0.2); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+/*  background-color: #fefefe;
+*/    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
