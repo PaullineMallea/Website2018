@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Fav.png">
+
+
+	<title> Paulline Mallea</title>
+
+
+ <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+
+  <script src="js/jquery.2.2.4.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+
+
+<!--   <script src="js/custom.js"></script>
+ -->
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display|Roboto" rel="stylesheet">
+  <script src="js/progressbar.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery.mobile.custom.min.js"></script>
+<!-- query -->
+
+<!-- Media query for narrow browser width -->
+<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+
+<!-- Media query for medium browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+
+<!-- Media query for full browser width -->
+<link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+
+<!-- Prevent smartphones from scaling pages down -->
+<meta name="viewport" content="initial-scale=1">
+
+<style>
+
+/* Media Queries */
+
+@mixin mq-xs {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+$background: #f7f7f7;
+$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+$border: 1px solid rgba(191, 191, 191, 0.4);
+$items: 5;
+$rows: ceil($items/2);
+
+/* Card sizing */
+
+$card-height: 400px;
+$card-width: 450px;
+$inner-margin: 15px;
+$number-size: 35px;
+$stagger: 180px;
+$outer-margin: 90px;
+$marker-size: 9px;
+
+/* Colors */
+
+$steps: #46b8e9;
+$colors: #46b8e9,
+#3ee9d1,
+#ce43eb,
+#4d92eb;
+$timeline: #bdbdbd;
+
+/* Calculations */
+
+$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+$container-width: $card-width*2 + $outer-margin*3;
+$head-height: $number-size + 50;
+$body-height: $card-height - $head-height;
+$marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
+
+/* Placeholders */
+
+@include mq-lg {
+  %arrow {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+  %marker {
+    position: absolute;
+    content: "";
+    width: $marker-size;
+    height: $marker-size;
+    background-color: $timeline;
+    border-radius: $marker-size;
+    box-shadow: 0px 0px 2px 8px $background;
+  }
+}
+
+
+/* Some Cool Stuff */
+
+$counter: $items - $rows + 2;
+@for $i from 1 through $rows {
+  .demo-card:nth-child(#{$i*2-1})   { order: $i }
+  .demo-card:nth-child(#{$i*2})     { order: $counter }
+  $counter: $counter + 1;
+}
+
+/* Border Box */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Fonts */
+
+body {
+  font-family: Roboto;
+}
+
+#timeline {
+  padding: 100px 0;
+  background: $background;
+  border-top: $border;
+  border-bottom: $border;
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  p.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+  .demo-card-wrapper {
+    position: relative;
+    margin: auto;
+    @include mq-lg {
+      display: flex;
+      flex-flow: column wrap;
+      width: $container-width;
+      height: $container-height;
+      margin: 0 auto;
+    }
+    &::after {
+      z-index: 1;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      border-left: $border;
+      @include mq-lg {
+        border-left: 1px solid $timeline;
+      }
+    }
+  }
+  .demo-card {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+    @include mq-sm {
+      max-width: 60%;
+      box-shadow: $box-shadow;
+    }
+    @include mq-md {
+      max-width: 40%;
+    }
+    @include mq-lg {
+      max-width: $card-width;
+      height: $card-height;
+      margin: $outer-margin;
+      margin-top: $outer-margin/2;
+      margin-bottom: $outer-margin/2;
+      &:nth-child(odd) {
+        margin-right: $outer-margin/2;
+        .head::after {
+          @extend %arrow;
+          border-left-width: 15px;
+          border-left-style: solid;
+          left: 100%;
+        }
+        .head::before {
+          @extend %marker;
+          left: $marker-dist + 1;
+        }
+      }
+      &:nth-child(even) {
+        margin-left: $outer-margin/2;
+        .head::after {
+          @extend %arrow;
+          border-right-width: 15px;
+          border-right-style: solid;
+          right: 100%;
+        }
+        .head::before {
+          @extend %marker;
+          right: $marker-dist - 1;
+        }
+      }
+      &:nth-child(2) {
+        margin-top: $stagger;
+      }
+    }
+    .head {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-weight: 400;
+      .number-box {
+        display: inline;
+        float: left;
+        margin: $inner-margin;
+        padding: 10px;
+        font-size: $number-size;
+        line-height: $number-size;
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.17);
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: inherit;
+        letter-spacing: 2px;
+        margin: 0;
+        padding-bottom: 6px;
+        line-height: 1rem;
+        @include mq-sm {
+          font-size: 165%;
+          line-height: 1.2rem;
+        }
+        span {
+          display: block;
+          font-size: 0.6rem;
+          margin: 0;
+          @include mq-sm {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .body {
+      background: #fff;
+      border: $border;
+      border-top: 0;
+      padding: $inner-margin;
+      @include mq-lg {
+        height: $body-height;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: $inner-margin;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    @for $i from 1 through $items {
+      &--step#{$i} {
+        $color: nth($colors, ((($i - 1) % 4) + 1));
+        background-color: $color;
+        .head::after {
+          border-color: $color;
+        }
+      }
+    }
+  }
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<!-- Blue colored page -->
+
+<div class="container5">
+
+<!-- Navigation Bar -->
+<div class="row">
+
+  <div class="col-xs-0 col-sm-0 col-md-5 col-lg-7">
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-7 col-lg-5"> 
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutMe.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="references.html">Ref.</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+<!-- End Navigation Bar -->
+
+  <div class="row" id="padding">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h3>WORK</h3>
+    </div>
+  </div>
+
+ <hr>
+
+
+<div id="myChart"><a class="zc-ref" href="https://www.zingchart.com">Powered by ZingChart</a></div>
+
+<script type="text/javascript">var myConfig = {
+  "type":"venn",
+  "plot":{
+    "value-box":{
+      "text":"%t"
+    }
+  },
+  "series":[
+    {
+      "values":[100],
+      "join":[15],
+      "text":"Web Production"
+    },
+    {
+      "values":[100],
+      "join":[15],
+      "text":"Web Design"
+    },
+    {
+      "values":[100],
+      "join":[15],
+      "text":"Web Developement"
+    }
+  ]
+};
+ 
+zingchart.render({ 
+  id : 'myChart', 
+  data : myConfig, 
+  height: "100%", 
+  width: "100%" 
+});</script>
+
+
+<div class="row" id="paddingB">
+
+    <a href="images/Paulline_Abril_Mallea.pdf"><span></span><h2>Resume</h2></a>
+
+    <a href="https://www.linkedin.com/in/paulline-mallea-30898038/"><span></span><h2>LinkedIn</h2></a>
+ 
+    <a href="https://github.com/PaullineMallea"><span></span><h2>GitHub</h2></a>
+
+</div>
+
+  <hr>
+
+
+
+  <div class="row" id="padding">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2> RECENT PROJECTS </h2>
+
+      <h4 id="client">Families For Freedom</h4>
+      <h6>Graphic Design | Web Design | Web Developement</h6>      
+
+
+      <p>Families for Freedom is a New York-based multi-ethnic human rights organization by and for families facing and fighting deportation. An organization that focuses on immigration rights and puts out yearly reports. This is the second year that I have had the privalage of working with them. This year I helped create a website and printed material for their latest report: "THE WRIT OF HABEAS CORPUS: How a United States District Court Circumvents Oversight of Unlawful Detention."</p>
+
+  <div class="btn"> 
+      <button><a href="http://familiesforhabeas.org/documents/Families_For_Habeas.pdf" target="_blank">PDF of Report</a></button>
+      <button><a href="http://familiesforhabeas.org/index.html" target="_blank">Go to Site</a></button>
+      <button><a href="https://github.com/PollyPock3t/FamiliesforFreedom" target="_blank">Github</a></button>
+
+  </div>
+
+     <!--  <h1>Site</h1>  <h1>Git Hub</h1> <h1>Printed Report</h1> <h1> -->
+
+
+
+
+       <iframe style="margin-top: 100px; position: relative; width: 100%;"  id="THE WRIT OF HABEAS CORPUS"
+        title="THE WRIT OF HABEAS CORPUS"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="yes"
+        marginheight="20"
+        marginwidth="20"
+        src="http://familiesforhabeas.org/">
+        </iframe>
+
+
+  </div>
+  </div>
+
+
+  <div class="row" id="padding" style="margin-top: 50px;">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h4 id="client">Be Well Group</h4>
+      <h6>Logo Design</h6> 
+
+      <div class="col-sm-6 col-md-6 col-lg-6">
+      
+      <p style="margin-left: -15px;">Be Well group is a wellness health center based in Pennsylvania. I was contacted to help them develop a logo that represented their branding needs. They are in the process of rebranding their company.</p>  
+
+    <!--   <div> 
+        <button style="margin-left: -20px;"><a href="images/phase1.pdf" target="_blank">Process: Phase 1</a></button>
+        <p> Exploring elements the client desired for logo: Hexagon Shape, Highlight letters B &amp; L</p>
+        <button style="margin-left: -20px;"><a href="images/phase2.pdf" target="_blank">Process: Phase 2</a></button>
+        <p> Refining logo based on client feedback</p>
+      </div> -->
+
+    </div>
+
+
+    <div class="col-sm-6 col-md-6 col-lg-6">
+    <!--     <button style="margin-left: -20px;"><a href="images/phase3.pdf" target="_blank">Process: Final Design</a></button> -->
+        <span id="resize" ><img src= "images/bewell_logo.png"></span>
+    </div>
+</div>
+
+</div>
+
+
+  <hr class="topMargin">
+
+  <div class="row" id="padding">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2> PAST PROJECTS </h2>
+
+  <div class="btn"> 
+      <button><a href="https://www.paullinemallea.com/" target="_blank">Go to Past Projects</a></button>
+  </div>
+
+      <iframe style="margin-top: 100px; position: relative; width: 100%;" id="Paulline Old site"
+        title="Paulline Mallea Old site"
+        width="100%"
+        height="600"
+        frameborder="0"
+        scrolling="yes"
+        marginheight="20"
+        marginwidth="20"
+        src="http://PaullineMallea.com/">
+        </iframe>
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- End of educcation and blue background -->
+
+<div class="row" id="footer">
+ <div class="col-sm-12 col-md-12 col-lg-12" > 
+
+  <img src="images/Fav.png" style="height: 60px; width: 60px;" class="center">
+
+  <p>PAULLINE ABRIL MALLEA <br> 
+  <a href="mailto:Malleapaulline@gmail.com">Malleapaulline@gmail.com</a> </p>
+  </div>
+</div>
+
+
+</body>
+
+
+	
+	<script src="js/jquery.2.2.4.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
