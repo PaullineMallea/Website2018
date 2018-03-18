@@ -404,14 +404,17 @@ button {
   display:          inline-block;
   text-align:       center;
   text-decoration:  none;
-  font-size:        10pt;
-  font-family:      sans-serif;
-  border:           2px solid white;
+  font-size:        8pt;
+  border:           2px solid #404040;
   border-spacing:   0px;
+  padding-left:     8px;
+  padding-right:    8px;
+  padding-top:      2px;
+  padding-bottom:   2px;
+  color:            white;
   font-family:      'Roboto', sans-serif;
-  letter-spacing:   2px;
-  padding:          10px;
-  margin:           5px;
+  background-color: #404040;
+
 }
 
 .btn a:hover {
@@ -821,6 +824,7 @@ section {
   margin:       auto; 
   text-align:   center;
 
+
 }
 
 .github_linkedin_Links table {
@@ -865,11 +869,11 @@ th {
 }
 /*--------------------------------------------------------- Screenshot of website*/
 
-.ffh_website {
+.website {
   width:      100%;
   display:    inline-block;
   position:   relative;
-  margin-top: 60px;
+  margin-top: 80px;
 
 }
 
@@ -899,14 +903,14 @@ th {
 
 /* Modal*/
 
-#myBtn {
+#myBtn, #myBtn1, #myBtn2  {
   z-index: 200;
 
 }
 
 
 /* The Modal (background) */
-.modal {
+.modal, .modal1, .modal2 {
     display:      none; /* Hidden by default */
     position:     fixed; /* Stay in place */
     z-index:      2000; /* Sit on top */
@@ -922,8 +926,10 @@ th {
   
 }
 
+
+
 /* Modal Content */
-.modal-content {
+.modal-content, .modal-content1, .modal-content2 {
   
   padding:        20px;
   border:         1px solid #888;
@@ -932,14 +938,13 @@ th {
   background-color:    white;
 
 
-
 }
 
 
 
 
 /* The Close Button */
-.close {
+.close, .close1, .close2 {
     color:        #aaaaaa;
     float:        right;
     font-size:    28px;
@@ -947,12 +952,14 @@ th {
 
 }
 
-.close:hover,
-.close:focus {
+.close, .close1, .close2 :hover,
+.close, .close1, .close2 :focus {
     color:            #000;
     text-decoration:  none;
     cursor:           pointer;
 }
+
+
 
 
 
