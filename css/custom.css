@@ -245,6 +245,7 @@ p {
  	margin-top:       50px;
  	margin-bottom:    50px;
   height:           12px;
+  position:         relative;
 /*  border:           0;
 */  color:            white;
   /*box-shadow:       inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);*/
@@ -903,14 +904,18 @@ th {
 
 /* Modal*/
 
-#myBtn, #myBtn1, #myBtn2  {
-  z-index: 200;
+#myBtn, #myBtn1, #myBtn2, #myBtn3, #myBtn4, #myBtn5  {
+  z-index:    200;
+  margin-top: 5px;
+  float:      right;
+  margin-bottom: 0px;
+  position:       relative;
 
 }
 
 
 /* The Modal (background) */
-.modal, .modal1, .modal2 {
+.modal, .modal1, .modal2, .modal3, .modal4, .modal5 {
     display:      none; /* Hidden by default */
     position:     fixed; /* Stay in place */
     z-index:      2000; /* Sit on top */
@@ -929,7 +934,7 @@ th {
 
 
 /* Modal Content */
-.modal-content, .modal-content1, .modal-content2 {
+.modal-content, .modal-content1, .modal-content2, .modal-content3, .modal-content4,.modal-content5  {
   
   padding:        20px;
   border:         1px solid #888;
@@ -944,7 +949,7 @@ th {
 
 
 /* The Close Button */
-.close, .close1, .close2 {
+.close, .close1, .close2, .close3, .close4, .close5 {
     color:        #aaaaaa;
     float:        right;
     font-size:    28px;
@@ -952,8 +957,8 @@ th {
 
 }
 
-.close, .close1, .close2 :hover,
-.close, .close1, .close2 :focus {
+.close, .close1, .close2, .close3, .close4, .close5 :hover,
+.close, .close1, .close2, .close3 :focus {
     color:            #000;
     text-decoration:  none;
     cursor:           pointer;
