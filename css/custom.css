@@ -13,14 +13,30 @@ a {
 
 }
 
-a:hover	{
-	color:                #F0EFF4;
-  text-decoration:      none;
-}
 
 h5:hover {
   color:                #F0EFF4;
   text-decoration:      none;
+}
+
+
+/* unvisited link */
+a:link {
+    color:                rgb(131, 33, 97);
+    text-decoration:      none;
+}
+
+/* visited link */
+a:visited {
+    color:                rgba(61, 38, 69, .7);
+    text-decoration:      none;
+}
+
+
+/* selected link */
+a:active {
+    color:                rgba(218, 65, 103, .7);
+    text-decoration:      none;
 }
 
 /* Acordian */
@@ -62,6 +78,7 @@ button.accordion  {
 
 /* background colors for homepage*/
 
+/* Hot pink*/
 
 .container1 {
 
@@ -71,6 +88,8 @@ button.accordion  {
   position:         relative;
 }
 
+
+/* Dark pink color*/
 .container2 {
 
   background:         rgba(131, 33, 97, .7);
@@ -84,11 +103,11 @@ button.accordion  {
 
 
 .container3 .col-sm-12 {
-
-  /*Purple color*/
   max-width:          100%;
 
 }
+
+/*Purple color*/
 
 .container3 {
 
@@ -442,6 +461,12 @@ button {
   width:            50%;
 }
 
+.centerH {
+  display:          block;
+  margin-bottom:    auto;
+  margin-top:       auto;
+  height:           50%;
+}
 
 #client {
   background-color: #404040;
@@ -719,6 +744,26 @@ section {
 }
 
 
+/* unvisited link */
+.timeline a:link {
+    color:                rgb(131, 33, 97);
+    text-decoration:      none;
+}
+
+/* visited link */
+.timeline a:visited {
+    color:                rgba(61, 38, 69, .7);
+    text-decoration:      none;
+}
+
+
+/* selected link */
+.timeline a:active {
+    color:                rgba(218, 65, 103, .7);
+    text-decoration:      none;
+}
+
+
 /*timeline*/
 
 
@@ -778,15 +823,15 @@ section {
 .work {
   width:            90%;
   height:           700px;
-  margin-top:       5%;
+  margin-top:       20px;
   margin-left:      5%;
+  margin-right:      5%;
   float:            left;
   display:          inline-block;
   position:         relative;
 /*  background-color: #cccccc;*/
   background-color:  white;
   overflow:         auto;
-  margin-top: 
 
 }
 
@@ -893,9 +938,10 @@ th {
   width:          60%;
   display:        inline-block;
   z-index:        1000;
-  margin-top:     -65%;
+  margin-top:     -70%;
   margin-left:    40%;
 }
+
 
 .title {
   color:          #404040;
@@ -936,7 +982,7 @@ th {
 /* Modal Content */
 .modal-content, .modal-content1, .modal-content2, .modal-content3, .modal-content4,.modal-content5  {
   
-  padding:        20px;
+  padding:        0px;
   border:         1px solid #888;
   width:          100%;
   overflow:       auto;
@@ -951,9 +997,12 @@ th {
 /* The Close Button */
 .close, .close1, .close2, .close3, .close4, .close5 {
     color:        #aaaaaa;
-    float:        right;
     font-size:    28px;
     font-weight:  bold;
+    padding:      20px;
+    position:     absolute;
+    right:        10px;
+    z-index:      300;
 
 }
 
@@ -965,6 +1014,63 @@ th {
 }
 
 
+/* thumbnail*/
 
+.thumbnail img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
 
+.thumbnail img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
+/*Thumbnail*/
+
+#thumbs { padding-top: 10px; overflow: hidden; }
+#thumbs img, #largeImage {
+   border: 1px solid gray;
+   padding: 4px;
+   background-color: white;
+   cursor: pointer;
+}
+#thumbs img {
+   float: left;
+   margin-right: 6px;
+}
+#description {
+   background: black;
+   color: white;
+   position: absolute;
+   bottom: 0;
+   padding: 10px 20px;
+   width: 525px;
+   margin: 5px;
+}
+#panel {
+    position: relative;
+}
+
+/*Columns*/
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 10px; 
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon {
+  width: 80px;
+  height: auto;
+}
