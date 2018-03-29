@@ -830,7 +830,6 @@ section {
   display:          inline-block;
   position:         relative;
 /*  background-color: #cccccc;*/
-  background-color:  white;
   overflow:         auto;
 
 }
@@ -938,7 +937,7 @@ th {
   width:          60%;
   display:        inline-block;
   z-index:        1000;
-  margin-top:     -70%;
+  margin-top:     -63%;
   margin-left:    40%;
 }
 
@@ -1073,4 +1072,6 @@ th {
 .icon {
   width: 80px;
   height: auto;
+  margin: 30px;
+  position: relative;
 }
