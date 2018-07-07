@@ -543,6 +543,7 @@ p #talkbuble {
 */   padding:       50px;
    margin-left:     10%;
    margin-right:    2%;
+   margin-top:      100px;
    
 }
 
@@ -772,6 +773,7 @@ section {
 .column {
     float:          left;
     width:          33.33%;
+
 }
 
 /* Clear floats after the columns */
@@ -823,7 +825,7 @@ section {
 
 .work {
   width:            90%;
-  height:           700px;
+  height:           100%;
   margin-top:       20px;
   margin-left:      5%;
   margin-right:      5%;
@@ -867,21 +869,14 @@ section {
 }
 
 .github_linkedin_Links {
-  width:        20%;
-  height:       auto%;
-  position:     absolute;
-  float:        left;
-  display:      inline-block;
-  margin:       auto; 
-
-
+float:        left;
+margin-left:  -15px;
+margin-top:   30px;
 }
 
 .github_linkedin_Links table {
-  width:        20%;
-  /*margin:     auto; */
-  margin-top:   50px;
-  margin-left:  -15px;
+width:        20%;
+
 
 }
 
@@ -928,6 +923,7 @@ th {
   margin-top: 100px;
   z-index:    100;
 
+
 }
 
 
@@ -942,13 +938,21 @@ th {
 }
 
 #mac {
-  width:          60%;
+  width:          55%;
   display:        inline-block;
   z-index:        1000;
-  margin-top:     -62%;
-  margin-left:    40%;
+  margin-top:     -38%;
+  margin-left:    43%;
 }
 
+#mac1 {
+  width:          110%;
+  display:        inline-block;
+  z-index:        1000;
+  margin-top:     -2%;
+  margin-left:    7%;
+ 
+}
 
 .title {
   color:          #404040;
@@ -1081,35 +1085,40 @@ th {
 }
 
 .icon {
-  width:          80px;
+  width:          50%;
   height:         auto;
-  margin:         30px;
   position:       relative;
-}
+  margin:         auto;
+  padding-right:  100px;
 
-#outer {
-  width:          100%;
-  text-align:     center;
+  
 }
 
 #inner {
-  display:        inline-block;
+display:          inline-block;
+padding-right:    30px;
+padding-left:     0px;
+padding-bottom:   30px;
+padding-top:      70px;
+
+
 
 }
 
 .statsRow {
-/*  background-color: rgba(61, 38, 69, .7); 
-*/  padding:          200px 50px 350px 50px; 
   position:         relative; 
-  margin-top:       -300px; 
   height:           auto; 
-  width:            100%;
-/*  background-image: url('images/workBg.jpg');
-*/}
+  width:            50%;
+  margin:           auto;
+  padding-bottom:      30px;
+
+}
 
 #columnText{
   color:            black; 
-  padding:          30px; 
-  font-size:        20px;
+  padding:          0px; 
+  font-size:        14px;
   text-align:       left;
+
 }
+
