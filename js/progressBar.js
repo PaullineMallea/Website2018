@@ -13,4 +13,4 @@ var bar = new ProgressBar.Line(container, {
   }
 });
 
-bar.animate(1.0);  // Number from 0.0 to 1.0
+bar.animate(.5);  // Number from 0.0 to 1.0

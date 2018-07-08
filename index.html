@@ -1,444 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    
     <link rel="icon" 
       type="image/png" 
       href="images/Fav.png">
-
-
-  <title> Paulline Mallea</title>
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/custom.css">
  
 
-  <script src="js/jquery.2.2.4.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-<!--   <script src="js/custom.js"></script>
- -->
+     <title> Paulline Mallea</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/progressbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
 
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+ 
 
-  <script src="js/progressbar.js"></script>
 
-  <script src="js/main.js"></script>
-  <script src="js/jquery.mobile.custom.min.js"></script>
-<!-- query -->
+    <!-- query -->
 
-<!-- Media query for narrow browser width -->
-<link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/mobile.css">
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 576px)" href="css/mobile.css">
 
-<!-- Media query for medium browser width -->
-<link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 577px) and (max-width: 768px)" href="css/tablet.css">
 
-<!-- Media query for full browser width -->
-<link rel="stylesheet" media="only screen and (min-width: 961px)" href="desktop.css">
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 992px)" href="desktop.css">
 
-<!-- Prevent smartphones from scaling pages down -->
-<meta name="viewport" content="initial-scale=1">
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
   
+    <script>
+      var i = 0;
+      var txt = '    Digital media manager with experience in web production, design & development.';
+      var speed = 90;
 
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
 
-</head>
-<body>
+  </head>
+
+<body onload="typeWriter()">
+
+<!-- Header with video background -->
 
 <div class="container">
-<div class="row">
-<div class="col-sm-12 col-md-12 col-lg-12">
-
-        <h3>HELLO!</h3>
-        <h4 style="text-align: center;" class="typewriter">I'm Paulline, a dynamic digital media manager with experience in web production, design &amp; development.</h4>
-
-
-<video autoplay loop id="video-background" muted plays-inline>
-  <source src="675076800.mp4" type="video/mp4">
-  </video>
-</div>
-</div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+        <h4>Paulline Mallea</h4>       
+        <h3 id="demo"></h3>
+        <!-- <video autoplay loop id="video-background" muted plays-inline>
+        <source src="675076800.mp4" type="video/mp4">
+        </video> -->
+    </div>
+  </div>
 </div>
 
+
+<!-- About Me Section -->
 
 <div class="container1"> 
-<button class="accordion"><h5>About</h5></button>
-<div class="panel">
-  <div class="row" style="margin-top:50px;">
-    <div id="padding">
-      <div class="row">
+  <button class="accordion"><h5>About</h5></button>
+    <div class="panel">
 
+        <div class="row">
 
-<!-- 3 circle Gif -->
+            <!-- Left column: Logo and contact information -->
 
+             <div class="column_3">
+                  <img style="padding-top: 15px; height: 100px; width:auto" class="center" src="images/fav.png">
+                  <h5 style="text-align: center">Paulline Mallea</h5>
+                  <p style="text-align: center; padding: 10px;"><span target="_blank" href="images/Paulline_Abril_Mallea.pdf" style="color: white">Resume</span> | <span target="_blank"  href="https://www.linkedin.com/in/paulline-mallea-30898038/" style="color: white">LinkedIn </span> | <span target="_blank"  href="https://github.com/PaullineMallea" style="color: white">GitHub</span>
+                  </p>
+            </div>
 
-<!-- About me -->
+            <!-- Middle column: Beginging of Story  -->
 
-<!-- font-family: 'Just Another Hand', cursive;
- -->
-      <div class="column">
+            <div class="column_3">
+                <p>My experience ranges from digital design to management. Currently, I am the web production and content manager for BeautifulNow, a New York City-based online publishing company. And I continue to freelance as a web designer and developer.</p>
+                <hr style="width: 85%; margin-left: 0px;">
+                <h5>My story</h5>
+                <p>I started my career in the digital realm while working at a startup in Cambridge, MA. At that time, I was the project manager of Follow The Honey. Managing all aspects of the business for their opening day. It was an exhilarating experience and I soon fell in</p>
+                </div>
+                
+            <div class="column_3" id="align">
+            
+                <p> love with the company and it's purpose [raise awareness for honeybees!]. Without hesitation, I signed on with them to be their store manager. My responsibilities included creating systems that would ensure that the shop would continue to enhance their presence in-store and online. Needless to say, helping them develop their brand and online presence became my specialty. Soon after, I began freelancing and developing my skills as a digital maven. Since then, I have gained a vast range of skills. Because I have worn many hats as a designer, marketer, developer, manager, producer. I see myself as a Jill of all trades and a master of understanding how to get a project off the ground.</p>
 
-        <img style="padding-top: 15px;" class="center" src="images/fav.png">
-
-        <h2 style="text-align: center">Paulline Mallea</h2>
-
-        <p style="text-align: center; padding: 10px;"><span target="_blank" href="images/Paulline_Abril_Mallea.pdf" style="color: white">Resume</span> | <span target="_blank"  href="https://www.linkedin.com/in/paulline-mallea-30898038/" style="color: white">LinkedIn </span> | <span target="_blank"  href="https://github.com/PaullineMallea" style="color: white">GitHub</span></p>
-
-      </div>
-
-      <div class="column">
-
-      <!-- style="font-family: 'Just Another Hand', cursive; font-size: 30px;" -->
-
-      <p>My experience ranges from digital design to management. Currently, I am the web production and content manager for BeautifulNow, a New York City-based online publishing company. And I continue to freelance as a web designer and developer. </p>
-
-      
-
-      <hr style="width: 85%; margin-left: 0px;">
-
-      <h4>My story</h4>
-
-      <p>I started my career in the digital realm while working at a startup in Cambridge, MA. At that time, I was the project manager of Follow The Honey. Managing all aspects of the business for their opening day. It was an exhilarating experience and I soon fell in </p>
-     
-      
-      </div>
-      
-      <div class="column">
-      
-      <p> love with the company and it's purpose [raise awareness for honeybees!]. Without hesitation, I signed on with them to be their store manager. My responsibilities included creating systems that would ensure that the shop would continue to enhance their presence in-store and online. Needless to say, helping them develop their brand and online presence became my specialty. Soon after, I began freelancing and developing my skills as a digital maven. Since then, I have gained a vast range of skills. Because I have worn many hats as a designer, marketer, developer, manager, producer. I see myself as a Jill of all trades and a master of understanding how to get a project off the ground.</p>
-
-      </div>
-      
-      </div>  
-
-      <hr style="margin-top: 100px; margin-bottom: 0px;">
-
-      <h3 style="font-size: 100px; color: white;">Digital Media Skills</h3>
-
-
-      <!-- Graphic design -->
-      <div id="bar" class="col-sm-4 col-md-4 col-lg-4">
-
-        <h1>DESIGN</h1>
+            </div>
         
-        <p>Adobe Photoshop</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 85%;"></div>
         </div>
 
+        <!-- DIGITAL MEDIAL SKILLS SECTION -->
 
-        <p>Adobe Illustrator</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 80%;"></div>
-        </div>
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-12">
+               <h5>Digital Media Skills</h5>
+            </div>
 
-        <p>Adobe InDesign</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 80%;"></div>
-        </div>
+            <!-- Graphic design -->
 
-        <p>Sketch</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width:30%;"></div>
-        </div>
+            <div id="bar" class="col-sm-12 col-md-4 col-lg-4">
+              <h1>DESIGN</h1>
+              <p>Adobe Photoshop</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+              <p>Adobe Illustrator</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+              <p>Adobe InDesign</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 80%;"></div>
+              </div>
+              <p>Sketch</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width:30%;"></div>
+              </div>
+              <p>Invision</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width:90%;"></div>
+              </div>
+            </div>
 
-        <p>Invision</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width:90%;"></div>
-        </div>
+            <!-- Digital Marketing -->
 
-      </div>
-
-  <!-- Digital Marketing -->
-
-      <div id="bar" class="col-sm-4 col-md-4 col-lg-4">
-
-      <h1>DIGITAL MARKETING</h1>
-
-        <p>Mailchimp</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 85%;"></div>
-        </div>
-
-        <p>Sprout Social</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 85%;"></div>
-        </div>
-
-        <p>Hootsuite</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 85%;"></div>
-        </div>
-
-        <p>Google Analytics</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 30%;"></div>
-        </div>
-
-        </div>
-
-
-
-      <!-- Website Design -->
-      <div id="bar" class="col-sm-4 col-md-4 col-lg-4">
-
-      <h1>WEB DEVELOPMENT</h1>
-
-        <p>HTML &amp; CSS</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 90%;"></div>
-        </div>
-
-        <p>Javascript</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 40%;"></div>
-        </div>
-
-        <p>Jquery</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 30%;"></div>
-        </div>
-
-        <p>MySQL</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 30%;"></div>
-        </div>
-
-         <p>PHP</p>
-        <div class="progress progress-striped active">
-          <div class="progress-bar" style="width: 30%;"></div>
-        </div>
-
-      </div>
-    
-
-      </div>
-      </div>
-    
-    </div>
-   </div>
-</div>
-</div>
+            <div id="bar" class="col-sm-12 col-md-4 col-lg-4">
+              <h1>DIGITAL MARKETING</h1>
+              <p>Mailchimp</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+              <p>Sprout Social</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+              <p>Hootsuite</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 85%;"></div>
+              </div>
+              <p>Google Analytics</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 30%;"></div>
+              </div>
+            </div>
 
 
-<!-- work -->
+            <!-- Website Design -->
+
+            <div id="bar" class="col-sm-12 col-md-4 col-lg-4">
+              <h1>WEB DEVELOPMENT</h1>
+              <p>HTML &amp; CSS</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 90%;"></div>
+              </div>
+              <p>Javascript</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 40%;"></div>
+              </div>
+              <p>Jquery</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 30%;"></div>
+              </div>
+              <p>MySQL</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 30%;"></div>
+              </div>
+               <p>PHP</p>
+              <div class="progress progress-striped active">
+                <div class="progress-bar" style="width: 30%;"></div>
+              </div>
+            </div>
+        
+          </div>
+
+     </div>
+  </div>
+</div> 
+
+
+<!-- Work Timeline -->
 
 <div class="container2"> 
 <button class="accordion"><h5>Work</h5></button>
 
-<div class="panel">
-  <div class="row">
-    <p style="padding-left: 10px; margin-top: -5px;">2008 - 2018</p>
-    <div id="padding">
+  <div class="panel">
+    <div class="row">
+      <p style="padding-left: 10px; margin-top: -5px;">2008 - 2018</p>
+      <div id="padding">
 
 
-<section class="timeline">
-  <ol>
-    <li>
-      <div>
-        <time>2008</time> <img style="width:20%; height: auto; float:right;" src="images/001-graduation.svg">
-        <h6>B.B.A Design &amp; Management<h6><p>Parson, Newschool of Design</p>
+<!-- Timeline Starts -->
+
+      <section class="timeline">
+
+        <!-- Start of ordered list for timeline -->
+        <ol>
+          <!-- 2008 -->
+          <li>
+            <div>
+              <time>2008</time> <img id="timeline_icon" src="images/svg/graduation.svg">
+              <h6>B.B.A Design &amp; Management</h6>
+              <p>Parson, Newschool of Design</p>
+            </div>
+          </li>
+
+          <!-- 2011 -->
+           <li>
+            <div>
+              <time>2011</time><img id="timeline_icon" src="images/svg/medal.svg">
+
+              <h6>Creative &amp; <br>Design Strategist</h6>
+
+              <p>Live with Design</p>
+
+              <p style="margin-top: -5px"><a target="_blank" href="http://livewithdesign.org/project/future-of-mobile-tagging/">PSFK x Unicef: <br> Concept Short Listed</a></p>
+
+            <!--    <a target="_blank" href="http://livewithdesign.org/project/future-of-mobile-tagging/"><button style="float: right;">View Work</button></a> -->
+
+<!--               <span style="text-align: left;">
+ -->
+
+              <p>PSFK <br> The Future of Work:</p>
+              <p style="margin-top: -5px"><a target="_blank" href="http://livewithdesign.org/project/flock-the-future-of-work/">
+               1. Flock</a></p>
+
+               <p style="margin-top: -5px"><a target="_blank" href="http://livewithdesign.org/project/co-apply-future-of-work-for-psfk/"> 2. Co-Apply</a></p>
+
+            <!-- </span> -->
+
+              <!-- <button id="myBtn5">View work</button> -->
+
+              <hr style="margin-top:20px; margin-bottom: 20px;">
+
+              <img id="timeline_icon" src="images/svg/blackboard.svg">
+          
+
+              <h6>Coursework in<br>Industrial Design</h6>
+
+              <p>Massachusetts College of Art</p>   
+            </div>
+            </li>
+
+          <!-- 2012 -->
+            <li>
+              <div>
+                <time>2012</time> 
+                <h6>Graphic Designer</h6>
+                <p>Chromatic gallerie</p>
+                <button id="myBtn4">View work</button>
+            </div>
+          </li>
+
+          <!-- 2013 -->
+          <li>
+            <div>
+              <time>2013</time> 
+              <h6>Creative &amp; <br>Brand Strategist</h6>
+              <p>Ogee Agency</p>
+
+              <button id="myBtn2">View work</button>
+
+              <hr style="margin-top:50px; margin-bottom: 20px;">
+
+              <h6>Web &amp; eCommerce <br>Manager</h6>
+              <p>Follow The Honey</p>
+              <button id="myBtn3">View work</button>
+            </div>
+          </li>
+
+          <!-- 2014 -->
+          <li>
+            <div>
+              <time>2014</time><h6>Production &amp; <br> Content Manager</h6><p>BeautifulNow</p>
+              <button id="myBtn1">View work</button>
+
+              <hr style="margin-top:50px; margin-bottom: 20px;">
+
+              <h6>Website Designer</h6><p>Nobel Signs</p>
+            </div>
+          </li>
+          <li>
+            <div id="px50_bottom">
+              <time>2016</time><img id="timeline_icon" src="images/svg/certificate.svg">
+
+              <h6>Certificate in <br>Full Stack Web Developement</h6><p>City College New York</p>
+              <hr style="margin-top:20px; margin-bottom: 20px;">
+
+              <img id="timeline_icon" src="images/svg/blackboard.svg">
+
+              <h6>Coursework in<br>Social Media Marketing</h6><p>CUNY Graduate School of Journalism</p>
+              <hr style="margin-top:20px; margin-bottom:20px;">
+
+              
+
+              <h6>Web Design &amp; Developement</h6><p>Families For Freedom</p>
+              <button id="myBtn">View work</button>
+              
+
+            </div>
+          </li> 
+          <li></li>
+
+        </ol>
+
+      </section>
+
+<!-- End of timeline -->
+      
       </div>
-    </li>
-     <li>
-      <div>
-        <time>2011</time><img style="width:20%; height: auto; float:right;" src="images/medal.svg">
+     </div>
+  </div>
+</div>
 
-        <h6>Creative &amp; Design Strategist<h6><p>Live with Design</p>
 
-        <p>PSFK x Unicef: Concept Short Listed</p> 
+<!-- Start of Modal -->
 
-        <p>PSFK The Future of Work</p>
+                  <!-- The Modal -->
+                  <div id="myModal" class="modal">
 
-        <hr style="margin-top:30px; margin-bottom: 30px;">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <div class="container-fluid">
+                      <span class="close">&times;</span>
+                      <div class="row">
+                        <div class="col-sm-12">
 
-        <img style="width:20%; height: auto; float:right;" src="images/blackboard.svg">
-    
+                          <div class="work">
+                          <div class="work_About">
+                          <h2 class="title"> Website Design <br>&amp; Developement</h2>
+                          <h5 style="color: grey">Families For Freedom</h5> 
 
-        <h6 style="color: black;">Coursework in<br>Industrial Design</h6><p>Massachusetts College of Art</p>
+                          <p id="work">Families for Freedom is a New York-based multi-ethnic human rights organization by and for families facing and fighting deportation. An organization that focuses on immigration rights and puts out yearly reports. This is the second year that I have had the privilege of working with them. I <b>designed and developed</b> a <a href="http://familiesforhabeas.org/" target="_blank">website</a> and <a href="http://familiesforhabeas.org/documents/Families_For_Habeas.pdf" target="_blank">printed material</a> for their latest report: "THE WRIT OF HABEAS CORPUS: How a United States District Court Circumvents Oversight of Unlawful Detention."</p>
+
+                          <div class="github_linkedin_Links">
+                            <table>
+                              <tr>
+                              <th><a href="http://familiesforhabeas.org/documents/Families_For_Habeas.pdf" target="_blank"><img src="images/svg/document.svg" class="web" alt="Families for Habeas"></a></th>
+
+                              <th><a href="http://familiesforhabeas.org/" target="_blank"><img src="images/svg/grid-world.svg" class="web" alt="Families for Habeas"></a></th>
+                          
+                              <th><a href="https://github.com/PaullineMallea/FamiliesforFreedom" target="_blank"><img src="images/svg/GitHub.svg" class="git-hub" alt="Paulline Abril Mallea's Github Account"></a></th> 
+
+                              </tr>
+                            </table>
+                        </div>
+                        </div>
+                        </div>
+
+                        <!-- ffh website (scrollable) -->
+                          <div class="website">
+
+                          <img id="mac" src="images/Macbook/FFF.png" alt="Mac template">
+
+                             <!--  <iframe class="habeas_site"
+                              title="THE WRIT OF HABEAS CORPUS"
+                              alt="The Writ of Habeas Corpus web page"
+                              frameborder="0"
+                              scrolling="yes"
+                              marginheight="20"
+                              marginwidth="20"
+                              src="http://familiesforhabeas.org/">
+                              </iframe> -->
+
+
+                          </div>
+                          <!-- main_Container closing div -->
+                          </div>   
+
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+<!-- End of Modal -->
+
+<!-- Start of Modal1 BeautifulNow-->
+
+                  <!-- The Modal -->
+                  <div id="myModal1" class="modal1">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close1">&times;</span>
+                       <div class="row work"">
+                        <div class="col-sm-12 col-md-12 col-lg-13">
+                          <h2 class="title">Production &amp; <br>Content Manager</h2>
+                          <h5 style="color: grey">BeautifulNow</h5> 
+
+                          <img class="center mac2" src="images/Macbook/BeautifulNow.png">
+
+                          </div>
+                        </div>
+
+
+                        <div class="row work">
+
+                          <hr style="color: grey">
+                          <div class="col-sm-12 col-md-12 col-lg-6">
+                            <h5 style="color: grey;">About</h5> 
+                             <p>BeautifulNow is a place where you can discover, create, and share the most beautiful things happening in the world today. Covering cutting-edge arts, design, and culture, with original creative content, fresh daily -- and creative photo competitions weekly. </p>
+
+                              <p>In this time I have worn many hats to help projects move forward. Recently, assisting in the redesign of our new site and email newsletter. Merging my knowledge of design, front-end development, and web production to help bridge communication gaps between team members and ease process of the project. I am now project managing the Alpha and Beta testing of our site and planning our site launch campaign.</p>
+
+                              <p> I am now project managing the Alpha and Beta testing of our site and planning our site launch campaign.</p>
+
+                            </div>
+
+                          <div class="col-sm-12 col-md-12 col-lg-6">
+                            <!--row of Facebook Stats  -->
+                              <h5 style="color: grey; margin-bottom: 20px;">Stats</h5> 
+
+                              <div id="inner" class="column grid" style="background-color: rgba(218, 65, 103, .7)">
+                                <img id="icon" src="images/png/chart.png" alt="BeautifulNow Stats">
+                                <p id="columnText">Increased BeautifulNow's site userbase by 90% to 480k.</p>
+                              </div>
+
+                              <div id="inner" class="column grid" style="background-color: rgba(131, 33, 97, .7)">
+                                <img id="icon" src="images/png/Facebook.png" alt="Facebook Stats">
+                                <p id="columnText">Increased BeautifulNow's Facebook following organically from 200k to 1 mil. followers.</p>
+                              </div>
+
+                              <div id="inner" class="column grid" style="background-color: rgba(61, 38, 69, .7)">
+                                <img id="icon" src="images/png/instagram.png" alt="Instagram Stats">
+                                <p id="columnText">Helped grow BeautifulNow's Instagram following to 15k followers.</p>
+                              </div>
+                          </div>
+
+
+                             <!-- <div class="github_linkedin_Links">
+                                <table>
+                                  <tr>
+                                  <th><a href="http://beautifulnow.is/" target="_blank"><img src="images/svg/grid-world.svg" class="web" alt="BeautifulNow"></a></th>
+                                  </tr>
+                                </table>
+                              </div>
+
+                          </div> -->
+                        </div>
+                    
+
+                        
+                                         
+
+                        <!--row of Facebook Stats  -->
+<!--                       <div class="containerfluid" ">
+
+                        <div class="row work" id="columnText">
+                          <div class="col-sm-3 col-md-3 col-lg-3">
+                          <p>In the past four years, I have worked closely with the team to manage BeautifulNow's website, social media, and email marketing. Check out some stats below:</p>
+                          </div>
+        
+                          <div class="col-sm-3 col-md-3 col-lg-3" style="background-color: green">
+                              <img id="icon" class="center" src="images/png/chart.png" alt="BeautifulNow Stats">
+                            <p>Increased BeautifulNow's site userbase by 90% to 480k.</p>
+                          </div>
+
+                          <div class="col-sm-3 col-md-3 col-lg-3">
+
+                            <img id="icon" class="center" src="images/png/Facebook.png" alt="Facebook Stats">
+                            <p>Increased BeautifulNow's Facebook following organically from 200k to <br>1 mil. followers.</p>
+                          </div>
+
+                          <div class="col-sm-3 col-md-3 col-lg-3">
+                            <img id="icon" class="center" src="images/png/instagram.png" alt="Instagram Stats"> 
+                            <p>Grow BeautifulNow's Instagram following to 15k followers.</p>
+                          </div>
+                        </div>
+                      </div> -->
+
+
+                  
+              
+               
+
+                      <div class="row">
+                        <hr class="work" style="color: grey">
+                        <h5 style="color: grey; margin-left: 115px;">Website</h5> 
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                       <iframe id="iframe" src="https://beautifulnow.is/">
+                      </iframe>
+                      </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+           
+       
+
+                      
 
           
-      </div>
-    </li>
-    <li>
-      <div id="myBtn">
-        <time>2012</time> 
-        <h6>Graphic Designer<h6><p>Chromatic gallerie</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2013</time> 
-        <h6>Creative &amp; Brand Strategist</h6><p>Ogee Agency</p>
 
-        <hr style="margin-top:30px; margin-bottom: 30px;">
+<!-- End of Modal1 -->
 
-        <h6>Web &amp; eCommerce Manager</h6><p>Follow The Honey</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2014</time> <h6>Production &amp; Content Manager</h6><p>BeautifulNow</p>
+<!-- Start of Modal2 : Ogee Agency -->
 
-        <hr style="margin-top:30px; margin-bottom: 30px;">
+                  <!-- The Modal -->
+                  <div id="myModal2" class="modal2">
 
-        <h6>Website Designer</h6><p>Nobel Signs</p>
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>2016</time><img style="width:20%; height: auto; float:right;" src="images/002-certificate.svg">
+                    <!-- Modal content -->
+                  <div class="modal-content2">
+                    <div class="container-fluid">
+                      <span class="close2">&times;</span>
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
 
-        <h6 style="color: black;">Certificate in <br>Full Stack Web Developement</h6><p>City College New York</p>
-        <hr style="margin-top:30px; margin-bottom: 30px;">
+                          <h2 class="title">Creative &amp; Brand <br>Strategist</h2>
+                        </div>
+                        <div class="row work">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                          <h5 style="color: grey">Ogee Agency</h5> 
+                          <p>Worked closely with the founder of <a href="http://ogeeagency.com" target="_blank">Ogee Agency</a> to develop a brand strategy for the company. Designed and implemented Ogee's website using WordPress.</p>
+                          <div class="github_linkedin_Links">
+                            <table>
+                              <tr>
+                              <th style="float: right;"><a href="http://ogeeagency.com" target="_blank"><img src="images/svg/grid-world.svg" class="web" alt="Ogee Agency"></a></th>
+                              </tr>
+                            </table>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
 
-        <img style="width:20%; height: auto; float:right;" src="images/blackboard.svg">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <iframe id="iframe" src="http://ogeeagency.com/">
+                          </iframe>
+                        </div>
+                      </div> 
+                     </div>
+                </div>
+              </div>
 
-        <h6 style="color: black;">Coursework in<br>Social Media Marketing</h6><p>CUNY Graduate School of Journalism</p>
-        <hr style="margin-top:30px; margin-bottom: 30px;">
+                
+      
 
-        
+<!-- End of Modal2 -->
 
-        <h6>Web Design &amp; Developement</h6><p>Families For Freedom</p>
-        <!-- Start of Modual -->
+<!-- Start of Modal3 : Follow The Honey -->
+
+                  <!-- The Modal -->
+                  <div id="myModal3" class="modal3">
+
+                    <!-- Modal content -->
+                    <div class="modal-content3">
+                      <div class="container-fluid">
+                      <span class="close3">&times;</span>
+                      <div class="row">
+                        <div class="col-sm-12">
+
+                          <div class="work">
+                          <div class="work_About">
+                          <h2 class="title">Web &amp; eCommerce <br>Manager</h2>
+                          <h5 style="color: grey">Follow The Honey</h5> 
+
+                          <p id="work">
+
+                          Worked with Follow The Honey to build a new site that focused on emmulating the unique brand elements of this one of a kind Honey shop.</p>
+
+                          <div class="github_linkedin_Links">
+                            <table>
+                              <tr>
+                              <th style="float: right;"><a href="http://ogeeagency.com" target="_blank"><img src="images/svg/grid-world.svg" class="web" alt="Ogee Agency"></a></th>
+                              </tr>
+                            </table>
+                        </div>
+                        </div>
+
+                        
+                        </div>
+
+                        <!-- ffh website (scrollable) -->
+                          <div class="website">
+
+                          <img id="mac" src="images/Macbook/FTH.png" alt="Mac template">
 
 
-        <!-- End of Modual -->
-      </div>
-    </li> 
-  
-    <li></li>
-  </ol>
-</section>
+                          </div>
+                          <!-- main_Container closing div -->
+                          </div>   
 
 
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+<!-- End of Modal3 -->
+
+<!-- Start of Modal4 : Chromatic gallerie -->
+
+                  <!-- The Modal -->
+                  <!-- The Modal -->
+                  <div id="myModal4" class="modal4">
+
+                    <!-- Modal content -->
+                    <div class="modal-content4">
+                      <div class="container-fluid">
+                      <span class="close4">&times;
+                      </span>
+                      <div class="row">
+                        <div class="col-sm-12">
+
+                          <div class="work">
+                          <div class="work_About">
+                          <h2 class="title">Graphic Designer</h2>
+                          <h5 style="color: grey">Chromatic gallerie</h5> 
+
+                          <p id="work">Worked closely with the Chromatic gallerie team to develop on brand marketing materials. Created web friendly designs for their site campaigns. And printed materials as needed.</p>
+
+                          <p>Examples of work:</p>
+
+                          <div class="row" style="width: 42%; margin-top: 50px; margin-left: 3px;">
+                            <div class="column" style="background-color:#aaa;">
+                              <a target="_blank" href="images/Chromaticgallerie/Chromaticgallerie2.jpg">
+                              <img class="thumbnail center centerH" src="images/Chromaticgallerie/Chromaticgallerie2.jpg" alt="Mac template" style="width:100px; height:70px;"></a>
+                            </div>
+                            <div class="column" style="background-color:#bbb;">
+                              <a target="_blank" href="images/Chromaticgallerie/Chromaticgallerie1.jpg">
+                              <img class="thumbnail center centerH" src="images/Chromaticgallerie/Chromaticgallerie1.jpg" alt="Mac template" style="width:100px; height:70px;"></a>
+                            </div>
+                            <div class="column" style="background-color:#ccc;">
+                              <a target="_blank" href="images/Chromaticgallerie/Chromaticgallerie3.jpg">
+                              <img class="thumbnail center centerH" src="images/Chromaticgallerie/Chromaticgallerie3.jpg" alt="Mac template" style="width:auto; height:70px;"></a>
+                            </div>
     
-    </div>
-   </div>
-</div>
-</div>
+                          </div>
+
+                            </div>
+                          </div>
+
+
+                        
+                        <div class="website">
+
+                        <img id="mac" src="images/Macbook/Chromaticgallerie.png" alt="Mac template">
+
+
+                        </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+<!-- End of Modal4 -->
+
+<!-- Start of Modal5 : Live with Design  -->
+
+                  <!-- The Modal -->
+                  <div id="myModal5" class="modal5">
+
+                    <!-- Modal content -->
+                    <div class="modal-content5">
+                      <div class="container-fluid">
+                      <span class="close5">&times;</span>
+                      <div class="row">
+                        <div class="col-sm-12">
+
+                          <div class="work">
+                          <div class="work_About">
+                          <h2 class="title">Creative <br>&amp; Design <br>Strategist</h2>
+                          <h5 style="color: grey">Live With Design</h5> 
+
+                          <p id="work"></p>
+                        </div>
+
+                       <!--  <div class="github_linkedin_Links">
+                            <table>
+                              <tr>
+                              <th style="float: right;"><a href="http://ogeeagency.com" target="_blank"><img src="images/svg/grid-world.svg" class="web" alt="Chromatic gallerie"></a></th>
+                              </tr>
+                            </table>
+                        </div> -->
+                        </div>
+
+                    
+                          <div class="website">
+
+                          <img id="mac" src="images/Macbook/FTH.png" alt="Mac template">
+
+
+                          </div>
+                          <!-- main_Container closing div -->
+                          </div>   
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+<!-- End of Modals -->
+
+
+<!-- REFERENCES PAGE -->
 
 <div class="container3"> 
-<button class="accordion"><h5>References</h5></button>
-<div class="panel">
+  <button class="accordion"><h5>References</h5></button>
+    <div class="panel">
+      <div class="containerfluid" id="padding">
+        <!-- Mary Canning's Quote -->
+         <div class="row">
 
-<div class="containerfluid" id="padding">
-  <div class="row">
-  <div class="col-sm-3 col-md-3 col-lg-2">
+          <div class="col-sm-3 col-md-3 col-lg-2">
+            <span><img class="img-circle" src="images/Mary.png"></span>
+          </div>
 
-  <span><img class="img-circle" src="images/Mary.png"></span>
+          <div class="col-sm-9 col-md-9 col-lg-10">
+          <p id="talkbubble" style="color: black">“Paulline is a rare breed of artistic perfectionism, leadership dedication and and marketing knowhow coupled with superlative people skills. To put it simply, she works with great calm when put to any test, delivering the high end design goods while working in harmony with everyone on the team. A gem!”</br></br><a style="color: grey">Mary Canning, CEO &amp; Founder of Follow The Honey</a></p>
+          </div>
+        
+        </div>
+        
+      <!--Chris Luhur Quote  -->
 
+        <div class="row">
+
+          <div class="col-sm-3 col-md-3 col-lg-2">
+          <span><img class="img-circle" src="https://pbs.twimg.com/profile_images/3157350752/9ff6597063edb5ab2e00d0323caa1632_400x400.jpeg"></span>
+          </div>
+
+          <div class="col-sm-9 col-md-9 col-lg-10">
+          <p id="talkbubble" style="color: black;"> "Paulline was a pleasure to work with at Chromatic Gallerie. She delivered creative and artistic graphic design work for us, while also maintaining the direction of the brand. She's also a really dynamic person and very easy to work with. I would recommend Paulline to anyone looking for a graphic designer! She's great!"</br></br><a style="color: grey">Chris Luhur, Founder and CEO of Chromatic gallerie​</a></p>   
+          </div>
+
+      
+        </div>
+
+        <!-- Danica Schneeweiss's Quote -->
+
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-2">
+          <span><img class="img-circle" src="https://media.licdn.com/dms/image/C5103AQF-2o8FqlDLYw/profile-displayphoto-shrink_800_800/0?e=1534377600&v=beta&t=CpJScwRqkui0zQE58PN3ZEwxF7mVNLTzISoRb_0debk"></span>
+          </div>
+
+          <div class="col-sm-9 col-md-9 col-lg-10">
+          <p id="talkbubble" style="color: black;"> “Paulline is a very talented graphic designer who exudes professionalism and creativity. There were many instances where we needed a fast turn around and Paulline always rose to the challenge. She worked with CHROMATICgallerie on numerous projects, from print design to web design, and we were all thrilled with her work..”</br></br> -<a style="color: grey">Danica Schneeweiss, COO of Chromatic gallerie</a></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
-
-
-  <div class="col-sm-9 col-md-9 col-lg-10">
-
-
-  <p id="talkbubble" style="color: black">“Paulline is a rare breed of artistic perfectionism, leadership dedication and and marketing knowhow coupled with superlative people skills. To put it simply, she works with great calm when put to any test, delivering the high end design goods while working in harmony with everyone on the team. A gem!”</br></br><a style="color: grey">Mary Canning, CEO &amp; Founder of Follow The Honey</a></p>
-
-<!--   <span><img class="shake" id="emoji_right" src="images/star.png"></span>
- -->
-  </div>
-  </div>
-
-  <hr>
-
-  <div class="row">
-  <div id="talkbubble_Left" class="col-sm-9 col-md-9 col-lg-10">
-
-  <p style="color: black;"> "Paulline was a pleasure to work with at Chromatic Gallerie. She delivered creative and artistic graphic design work for us, while also maintaining the direction of the brand. She's also a really dynamic person and very easy to work with. I would recommend Paulline to anyone looking for a graphic designer! She's great!"</br></br><a style="color: grey">Chris Luhur, Founder and CEO of Chromatic gallerie​</a></p>
-
-     <!--  <span><img class="shake" id="emoji_left" src="images/thumbs_Up.png"></span> -->
- 
-  </div>
-
-  <div class="row">
-  <div class="col-sm-3 col-md-3 col-lg-2">
-    
-  <span><img class="img-circle" src="https://pbs.twimg.com/profile_images/3157350752/9ff6597063edb5ab2e00d0323caa1632_400x400.jpeg"></span>
-    
-
-
-  </div>
-  </div>
-
-  <hr>
-
-  <div class="row">
-  <div class="col-sm-3 col-md-3 col-lg-2">
-
-
-  <span><img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/005/022/3c5/2e9cf35.jpg"></span>
-
-  </div>
-
-  <div class="col-sm-9 col-md-9 col-lg-10">
-
-  <p id="talkbubble" style="color: black;"> “Paulline is a very talented graphic designer who exudes professionalism and creativity. There were many instances where we needed a fast turn around and Paulline always rose to the challenge. She worked with CHROMATICgallerie on numerous projects, from print design to web design, and we were all thrilled with her work..”</br></br> - <b><a style="color: grey">Danica Schneeweiss</b>, COO of Chromatic gallerie</a></p>
-
- <!--  <span><img class="shake" id="emoji_right" src="images/ok.png"></span> -->
- 
-  </div>
-  </div>
-
 </div>
-</div>
-</div>
-</div>
-
-
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
-
-
 
 <!-- End of educcation and blue background -->
 <div class="containerfluid">
-<div class="row" id="footer">
- <div class="col-sm-12 col-md-12 col-lg-12" > 
-
-  <img src="images/Fav.png" style="height: 60px; width: 60px;" class="center">
-
-  <p><a style="padding-left: 60px;" href="mailto:Malleapaulline@gmail.com">Email Paulline!</a> </p>
+  <div class="row" id="footer">
+   <div class="col-sm-12 col-md-12 col-lg-12" > 
+      <img src="images/Fav.png" style="height: 60px; width: 60px;" class="center">
+      <p><a style="text-align: center; position: relative;" href="mailto:Malleapaulline@gmail.com">Email Paulline!</a> </p>
+    </div>
   </div>
 </div>
-</div>
 
 
 
-  
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+<!-- scripts -->
+
+  <script src="js/accordion.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/modal1.js"></script>
+  <script src="js/modal2.js"></script>
+  <script src="js/modal3.js"></script>
+  <script src="js/modal4.js"></script>
+  <script src="js/modal5.js"></script>
+  <script src="js/slide.js"></script>
 
 
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div style="text-align: center; font-size: 10px; padding-top: 100px;>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
 
 </body>
 </html>
