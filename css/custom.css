@@ -68,10 +68,9 @@ button.accordion  {
 /* Header Section*/
 
 .container {
-
-  height:           auto;
+  height:           250px;
   position:         relative;
-
+  padding-top:      50px;
 }
 
 
@@ -83,10 +82,12 @@ button.accordion  {
 
   background:       rgba(218, 65, 103, .7);
   height:           auto;
+  width:            100%;
   padding-left:     2%;
   position:         relative;
-  overflow:           scroll;
+  overflow:         scroll;
   margin-bottom:    20px;
+  margin-top:       100px;
 }
 
 
@@ -169,6 +170,7 @@ h3 {
   letter-spacing: 2px;
 
 }
+
 
 h4 {
   text-indent:    0px;
@@ -485,6 +487,7 @@ button {
   animation: 
     typing 6s steps(40, end),
     blink-caret .75s step-end infinite;
+
 }
 
 /* The typing effect */

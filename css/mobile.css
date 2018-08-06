@@ -1,5 +1,5 @@
 body {
-  background-color: green;
+  /*background-color: green;*/
 }
 
 h4 {
@@ -24,8 +24,14 @@ h3{
 
 }
 
-.container{
-  height:   370px;
+.container {
+  height:           275px;
+  position:         relative;
+}
+
+.container1 {
+  margin-top:       150px;
+  position:         relative;
 }
 
 
@@ -155,4 +161,12 @@ hr {
 
 #align {
   margin-top: -110px;
+}
+
+/*video*/
+
+#video-background {
+  width: 350%;
+  height: auto;
+  left: -400px;
 }
