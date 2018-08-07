@@ -749,9 +749,17 @@ section {
 /*columns*/
 .column_3 {
     float:          left;
-    width:          33.33%;
-    padding:        40px;
-    text-align:     justify;
+    width:          33.3%;
+    padding:        20px;
+    text-align:     left;
+
+}
+
+.column_L {
+    float:          left;
+    width:          33.3%;
+    padding:        20px;
+    text-align:     left;
 
 }
 
