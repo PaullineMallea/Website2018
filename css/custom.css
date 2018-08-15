@@ -1282,3 +1282,21 @@ height:           275px;
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.profile_photo {
+  padding-top: 20px; 
+  padding-left: 20px; 
+  height: 100%; 
+  width:100%; 
+  margin-top: 50px;"
+}
+
+#profile_margin {
+  padding-top: 100px;
+}
+
+#profile_bio {
+  padding-left: 50px; 
+  padding-right: 50px; 
+  
+}

@@ -156,8 +156,8 @@ border-radius:      50% 50% 50% 50%;
 }
 
 hr {
-  margin-top:     0px;
-  margin-bottom:  0px;
+  margin-top:     20px;
+  margin-bottom:  20px;
 }
 
 
@@ -178,4 +178,24 @@ hr {
   height: auto;
   left: -300px;
 
+}
+
+.profile_photo {
+  padding-top: 20px; 
+  padding-left: 50px; 
+  padding-right: 50px;
+  height: auto; 
+  width: 100%; 
+  margin-top: 150px;"
+}
+
+#profile_bio {
+  padding-right: 50px; 
+  padding-left: 50px
+  margin-top: 0px;"
+}
+
+
+#profile_margin {
+  padding-top: 50px;
 }

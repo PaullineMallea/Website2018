@@ -155,8 +155,8 @@ margin-left: -20px;
 }
 
 hr {
-  margin-top:     0px;
-  margin-bottom:  0px;
+  margin-top:     20px;
+  margin-bottom:  20px;
 }
 
 #align {
@@ -169,4 +169,24 @@ hr {
   width: 350%;
   height: auto;
   left: -400px;
+}
+
+
+.profile_photo {
+  padding-top: 20px; 
+  padding-left: 0px; 
+  height: 100%; 
+  width:100%; 
+  margin-top: 150px;"
+}
+
+#profile_bio {
+  padding-left: 0px; 
+  padding-right: 0px; 
+
+}
+
+
+#profile_margin {
+  padding-top: 50px;
 }
